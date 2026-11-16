@@ -230,17 +230,23 @@ This works on any Node.js version (uses built-in SQLite on Node 22.5+, falls bac
 
 Read these files as needed during plan creation:
 
-| File                                 | When to Read                       | Contents                                       |
-| ------------------------------------ | ---------------------------------- | ---------------------------------------------- |
-| `skill/reference/queries.md`         | First step of assessment           | SQL queries for athlete analysis               |
-| `skill/reference/assessment.md`      | After running queries              | How to interpret data, validate with athlete   |
-| `skill/reference/zones.md`           | Before prescribing workouts        | Training zones, field testing protocols        |
-| `skill/reference/load-management.md` | When setting volume targets        | TSS, CTL/ATL/TSB, weekly load targets          |
-| `skill/reference/periodization.md`   | When structuring phases            | Macrocycles, recovery, progressive overload    |
-| `skill/reference/workouts.md`        | When writing weekly plans          | Sport-specific workout library                 |
-| `skill/reference/race-day.md`        | Final section of plan              | Pacing strategy, nutrition                     |
-| `skill/reference/coach-sheet.md`     | When a Google Sheet holds the plan | The coach sheet's tables and how to write them |
-| `skill/reference/reviews.md`         | For any check-in or review         | Daily, weekly, block and season reviews        |
+| File                                 | When to Read                                    | Contents                                                  |
+| ------------------------------------ | ----------------------------------------------- | --------------------------------------------------------- |
+| `skill/reference/queries.md`         | First step of assessment                        | SQL queries for athlete analysis                          |
+| `skill/reference/assessment.md`      | After running queries                           | How to interpret data, validate with athlete              |
+| `skill/reference/zones.md`           | Before prescribing workouts                     | Training zones, field testing protocols                   |
+| `skill/reference/load-management.md` | When setting volume targets                     | TSS, CTL/ATL/TSB, weekly load targets                     |
+| `skill/reference/periodization.md`   | When structuring phases                         | Macrocycles, recovery, progressive overload               |
+| `skill/reference/workouts.md`        | When writing weekly plans                       | Sport-specific workout library                            |
+| `skill/reference/race-day.md`        | Final section of plan                           | Pacing strategy, nutrition                                |
+| `skill/reference/strength.md`        | When writing strength sessions                  | Strength phases, plyometrics, left/right check            |
+| `skill/reference/execution.md`       | Reviewing a session, or advising how to run one | Easy and quality execution, heat, treadmill, data quality |
+| `skill/reference/fuelling.md`        | Fuelling a session, or food and fluid questions | Daily eating, session fuel, gut training, sweat test      |
+| `skill/reference/swim-technique.md`  | Swim technique or open-water prep               | Fault order, drills, kit, open water                      |
+| `skill/reference/coach-sheet.md`     | When a Google Sheet holds the plan              | The coach sheet's tables and how to write them            |
+| `skill/reference/reviews.md`         | For any check-in or review                      | Daily, weekly, block and season reviews                   |
+
+Each rule in the reference files names its source and an evidence label: **research** (published studies), **coach's experience** (a named coach's practice), **not checked** (a claim nobody has checked against its source), or **Claude's judgement** (Claude's own application of the method). Carry the label into any proposal built on the rule.
 
 ---
 
@@ -279,7 +285,7 @@ Read these files as needed during plan creation:
 ### Phase 4: Plan Design
 
 8. Read `skill/reference/periodization.md` for phase structure
-9. Read `skill/reference/workouts.md` to build weekly sessions
+9. Read `skill/reference/workouts.md` to build weekly sessions, `skill/reference/strength.md` for strength sessions and `skill/reference/fuelling.md` for long-session fuel
 10. Calculate weeks until event, design phases
 
 ### Phase 5: Plan Delivery
@@ -540,7 +546,7 @@ After both files are created, tell the user:
 5. **Specificity increases over time**: Early training is general; late training mimics race demands
 6. **Taper adequately**: Most athletes under-taper; trust the fitness you've built
 7. **Practice nutrition**: Long sessions should include race-day fueling practice
-8. **Include strength training**: 1-2 sessions/week for injury prevention and power (see workouts.md)
+8. **Include strength training**: 1-2 sessions/week for injury prevention and power (see strength.md)
 9. **Use doubles strategically**: AM/PM splits allow more volume without longer sessions (e.g., AM swim + PM run)
 10. **Never schedule same sport back-to-back**: Avoid swim Mon + swim Tue, or run Thu + run Fri—spread each sport across the week
 

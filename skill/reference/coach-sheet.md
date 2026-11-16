@@ -19,21 +19,21 @@ When a table is missing, create it with the header below and tell the athlete.
 
 One row per planned session. This table is the plan.
 
-| Column      | Contents                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------- |
-| ID          | `YYYY-MM-DD-sport`, with `-2` for a second session of that sport that day                     |
-| Date        | Day of the session                                                                            |
-| Week        | Monday of that week (joins to `Weeks`)                                                        |
-| Sport       | Swim, Bike, Run, Strength, Other                                                              |
-| Code        | Workout library code (see `workouts.md`), or a short name for sessions outside the library    |
-| Session     | Every step with its target (zone plus the athlete's own number), fuelling and gates included  |
-| Planned min | Whole session, warm-up and cool-down included; the steps in `Session` add up to it            |
-| Status      | planned, done, changed, skipped                                                               |
-| Actual min  | From the recorded activity                                                                    |
-| RPE         | Athlete's 1–10 for the session                                                                |
-| Notes       | What the athlete said about it (pain, heat, feel)                                             |
-| Activity ID | Strava activity ID once matched                                                               |
-| Review      | The coach's one-line verdict: executed as planned or not, and the one thing that matters next |
+| Column      | Contents                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------- |
+| ID          | `YYYY-MM-DD-sport`, with `-2` for a second session of that sport that day                         |
+| Date        | Day of the session                                                                                |
+| Week        | Monday of that week (joins to `Weeks`)                                                            |
+| Sport       | Swim, Bike, Run, Strength, Other                                                                  |
+| Code        | Workout library code (see `workouts.md`), or a short name for sessions outside the library        |
+| Session     | Every step with its target (zone plus the athlete's own number), fuelling and gates included      |
+| Planned min | Whole session, warm-up and cool-down included; the steps in `Session` add up to it                |
+| Status      | planned, done, changed, skipped                                                                   |
+| Actual min  | From the recorded activity                                                                        |
+| RPE         | Athlete's 1–10 for the session                                                                    |
+| Notes       | What the athlete said about it (pain, heat, feel)                                                 |
+| Activity ID | Strava activity ID once matched; several, comma-separated, when one session was recorded in parts |
+| Review      | The coach's one-line verdict: executed as planned or not, and the one thing that matters next     |
 
 `changed` means the session was done differently from the row as first agreed; put what changed and why in `Review`.
 
@@ -46,7 +46,7 @@ One row per week of the season. This table is the annual plan.
 | Week            | Monday of the week                                                    |
 | Target          | The race this block builds to                                         |
 | Period          | Prep, Base 1–3, Build 1–2, Peak, Race, Transition                     |
-| Type            | load, recovery, test, race                                            |
+| Type            | load, recovery, test, taper, race                                     |
 | Planned h       | Endurance hours planned                                               |
 | Strength phase  | AA, MT, MS, SM, none                                                  |
 | Abilities       | The abilities trained that week (see `periodization.md`)              |
@@ -122,7 +122,7 @@ One row per fact about the athlete, as `Key`, `Value`, `Updated`, `Note`. The fi
 | Equipment          | Bike, trainer, power meters, watch, HR strap, treadmill, pool length                  |
 | Pain site          | The site the `Pain` score tracks and its usual value                                  |
 | Injury patterns    | Known recurring issues and their early warning signs                                  |
-| Readiness cut-offs | Any cut-off that differs from the defaults in `reviews.md`                            |
+| Readiness cut-offs | Any cut-off that differs from the defaults in `load-management.md`                    |
 | Resp baseline      | Mean and SD of overnight respiratory rate, and the nights it covers                   |
 | Warm-up normal     | Per indoor sport: the fixed warm-up load and the normal HR at it                      |
 | Test protocols     | The protocol used per sport                                                           |
