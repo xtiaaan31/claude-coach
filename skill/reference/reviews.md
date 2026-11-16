@@ -17,7 +17,7 @@ All four read and write the coach sheet (`coach-sheet.md`). Recorded activities 
 
 The athlete owns the plan. The coach proposes; a change is written to the sheet after the athlete agrees. Each proposal states what changes, the data behind it, and the evidence label of the rule it rests on.
 
-One exception: a same-day swap under a rule already in force (the readiness rules below, or an `agreed` row in `Decisions`) is applied at once and reported in the same message.
+One exception: a same-day swap under a rule already in force (the readiness rules in `load-management.md`, or an `agreed` row in `Decisions`) is applied at once and reported in the same message.
 
 Every agreement or refusal that should hold beyond today becomes a `Decisions` row. Read `Decisions` and `Profile` before proposing: an `agreed` row is a rule, a `declined` row is settled.
 
@@ -25,47 +25,12 @@ Every agreement or refusal that should hold beyond today becomes a `Decisions` r
 
 1. **Post the day.** Read today's `Sessions` rows. Find yesterday's activities and match each to its row. For today's indoor sessions, give the normal warm-up heart rate from `Profile`. Ask for the check-in.
 2. **Take the check-in.** The athlete replies with the sleep score, overnight respiratory rate, five 1–5 scores (energy, legs, stress, mood, motivation), the pain score and any illness signs. Ask once for anything missing that the rules need.
-3. **Set the colour** with the readiness rules below.
+3. **Set the colour** with the readiness rules in `load-management.md` ("Recovery Monitoring").
 4. **Adjust today** by the colour, and tomorrow only when today's change moves a quality session onto it.
 5. **Review yesterday.** For each matched activity, compare what was done with the row's steps and targets: time in the prescribed zone, drift above the easy ceiling, reps hit or missed, RPE against the intended effort. Read the per-second streams for quality sessions and for any session the athlete flagged.
 6. **Write the rows.** Append the `Check-ins` row. Update yesterday's `Sessions` rows (status, actual minutes, RPE, notes, activity ID, review) and today's rows if they changed.
 
 Done when today's `Check-ins` row exists and every session of yesterday has a status and a review line.
-
-### Readiness rules
-
-These are the defaults. A cut-off in `Profile` overrides the default beside it. Evidence label for the whole scheme: coaching judgement, not validated. Its purpose is to steer today's session; acute fatigue is expected, and trends are the weekly review's business.
-
-**Sleep point** from the watch sleep score: 90–100 → 5, 80–89 → 4, 65–79 → 3, 50–64 → 2, under 50 → 1. Move it by at most 1 toward how the athlete says they slept. With no score, use the athlete's own 1–5.
-
-**Total** = the five scores plus the sleep point (6–30).
-
-| Colour | When                                                                             | Effect on today                                                         |
-| ------ | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Red    | Total ≤ 14, any score of 1, pain well above usual or sharper, or illness signs   | Quality becomes easy; rest if unwell                                    |
-| Amber  | Total 15–19, any score of 2, or pain 1 point above usual                         | Lower half of each target range, fewer reps, one set fewer for strength |
-| Green  | Total ≥ 20 and no score below 3; a total of 20–21 works at the bottom of a range | As planned                                                              |
-
-A sleep point of 1 from the watch alone, with the other scores at 3 or more and the athlete feeling fine, is amber.
-
-**Respiratory rate** against the athlete's baseline (mean and SD in `Profile`; the latest 30 logged nights once there are 30). Label: one coach's experience (Galpin), not research.
-
-- Up to +0.7 breaths/min: no effect.
-- +0.8 or more two nights running: at most amber.
-- +1.5 or more on one night: at most amber, and ask about illness; with illness signs, red.
-- After a night under 5 hours, a raised value reflects the short night: at most amber.
-- A normal value never improves the colour.
-
-**Warm-up heart rate**, indoor sessions only, at the fixed warm-up load in `Profile`. Label: coaching judgement.
-
-- Within 4 bpm of normal: keep the plan.
-- 5–9 bpm above: drop one level (green → amber, amber → easy).
-- 10 or more above, or clearly harder than usual: easy only.
-- 5 or more below with breathing or effort harder than usual: drop one level. Lower with normal or easier feel is fitness.
-
-Outdoors in heat, judge by feel and RPE.
-
-In recovery weeks, also ask "legs fresh again?" each day until the answer is yes, and log it. The day it turns yes is the athlete's own taper-length evidence.
 
 ## Weekly review
 

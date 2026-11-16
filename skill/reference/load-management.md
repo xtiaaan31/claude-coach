@@ -2,6 +2,10 @@
 
 Professional coaches quantify training stress to manage fatigue, prevent overtraining, and peak for races.
 
+## Load Without TSS
+
+TSS is only as good as its inputs. For an athlete without power on the bike or run, or training in heat that inflates heart rate, or who has declined TSS tracking, manage load with three things: weekly planned against actual hours, the weekly share of time in Zones 1–2, and the readiness rules under "Recovery Monitoring". The ramp and recovery-week guidance below still applies, read in hours.
+
 ## Training Stress Score (TSS)
 
 TSS measures the physiological cost of a workout. For cycling with power:
@@ -106,36 +110,59 @@ TSB = CTL - ATL
 
 ## Recovery Monitoring
 
-### Heart Rate-Based Indicators
+Readiness works at two speeds. The daily score steers today's session, where acute fatigue is expected. Trends over days and weeks say whether the load itself is right, and belong to the weekly review (`reviews.md`).
 
-**Resting Heart Rate (RHR):**
+The numbers below are defaults. With a coach sheet, a cut-off in `Profile` or an `agreed` row in `Decisions` overrides the default beside it. Evidence label for the daily scheme: coaching judgement, not validated.
 
-- Measure every morning before getting up
-- RHR elevated 5-10+ bpm = accumulated fatigue
-- Sustained elevation over 3+ days = consider recovery day/week
-- Sudden drop below baseline = potential illness onset
+### Daily readiness score
 
-**Heart Rate Variability (HRV):**
+**Sleep point** from the watch sleep score: 90–100 → 5, 80–89 → 4, 65–79 → 3, 50–64 → 2, under 50 → 1. Move it by at most 1 toward how the athlete says they slept. With no score, use the athlete's own 1–5.
 
-- Higher HRV = better recovered
-- Lower HRV = stressed/fatigued
-- HRV 10%+ below baseline = reduce intensity
-- Track 7-day rolling average, not daily swings
+**Total** = the five scores plus the sleep point (6–30).
 
-### Subjective Indicators (1-5 scale)
+| Colour | When                                                                             | Effect on today                                                         |
+| ------ | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Red    | Total ≤ 14, any score of 1, pain well above usual or sharper, or illness signs   | Quality becomes easy; rest if unwell                                    |
+| Amber  | Total 15–19, any score of 2, or pain 1 point above usual                         | Lower half of each target range, fewer reps, one set fewer for strength |
+| Green  | Total ≥ 20 and no score below 3; a total of 20–21 works at the bottom of a range | As planned                                                              |
 
-| Metric          | Questions                        |
-| --------------- | -------------------------------- |
-| Sleep quality   | How restful? Wake during night?  |
-| Energy          | How do you feel getting up?      |
-| Muscle soreness | General or localized?            |
-| Mood            | Motivated or dreading training?  |
-| Appetite        | Normal, elevated, or suppressed? |
+A sleep point of 1 from the watch alone, with the other scores at 3 or more and the athlete feeling fine, is amber.
 
-**Warning patterns:**
+### Overnight respiratory rate
 
-- 2+ low scores for 3+ days = back off
-- Sleep + mood both low = high burnout risk
+Against the athlete's baseline (mean and SD in `Profile`; the latest 30 logged nights once there are 30). Label: one coach's experience (Galpin), not research.
+
+- Up to +0.7 breaths/min: no effect.
+- +0.8 or more two nights running: at most amber.
+- +1.5 or more on one night: at most amber, and ask about illness; with illness signs, red.
+- After a night under 5 hours, a raised value reflects the short night: at most amber.
+- A normal value never improves the colour.
+
+### Warm-up heart rate
+
+Indoor sessions only, at the fixed warm-up load in `Profile`. Label: coaching judgement.
+
+- Within 4 bpm of normal: keep the plan.
+- 5–9 bpm above: drop one level (green → amber, amber → easy).
+- 10 or more above, or clearly harder than usual: easy only.
+- 5 or more below with breathing or effort harder than usual: drop one level. Lower with normal or easier feel is fitness.
+
+Outdoors in heat, judge by feel and RPE.
+
+### Recovery-week freshness
+
+In recovery weeks, also ask "legs fresh again?" each day until the answer is yes, and log it. The day it turns yes is the athlete's own taper-length evidence.
+
+### Trend indicators
+
+Read these over 3–10 days against the athlete's own baseline, never from a single day. Label: coach's experience (Galpin); the thresholds are rules of thumb.
+
+- **Resting heart rate** is a slow, late marker: 5–10 bpm above baseline for 3 or more days means accumulated fatigue or illness.
+- **HRV** moves earlier: a 7-day average 10% or more below baseline means reduce intensity. An athlete whose HRV normally swings widely needs a bigger drop before it means anything.
+- **Daily scores:** two or more low scores for 3 or more days means back off; sleep and mood both low is the burnout pattern.
+- After 30 logged days, judge each marker against the athlete's own spread: more than 1 SD from the 30-day mean for 3–5 days, or more than 2 SD for two days.
+
+Before blaming training load for a bad trend, rule out illness, poor sleep, under-fuelling, alcohol and life stress: the body adds them all to one stress total.
 
 ### Recovery Week Structure
 
