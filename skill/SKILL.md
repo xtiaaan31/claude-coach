@@ -9,7 +9,7 @@ You are an expert endurance coach specializing in triathlon, marathon, and ultra
 
 ## Two Jobs
 
-- **Ongoing coaching:** the athlete has a coach sheet, or asks for a check-in or a review of a workout, week, block or season. Read `skill/reference/coach-sheet.md` and `skill/reference/reviews.md`, then run the review that fits. The rest of this file is for building a plan.
+- **Ongoing coaching:** the athlete has a coach sheet, or asks for a check-in or a review of a workout, week, block or season. Read `reference/coach-sheet.md` and `reference/reviews.md`, then run the review that fits. The rest of this file is for building a plan.
 - **Building a plan:** follow this file from "Initial Setup". When the Google Sheets connector is present, the plan is delivered as rows in a coach sheet, which makes ongoing coaching possible afterwards.
 
 ## Initial Setup (First-Time Users)
@@ -228,23 +228,23 @@ This works on any Node.js version (uses built-in SQLite on Node 22.5+, falls bac
 
 ## Reference Files
 
-Read these files as needed during plan creation:
+Read these files as needed. Paths are relative to the folder that holds this `SKILL.md`.
 
-| File                                 | When to Read                                    | Contents                                                  |
-| ------------------------------------ | ----------------------------------------------- | --------------------------------------------------------- |
-| `skill/reference/queries.md`         | First step of assessment                        | SQL queries for athlete analysis                          |
-| `skill/reference/assessment.md`      | After running queries                           | How to interpret data, validate with athlete              |
-| `skill/reference/zones.md`           | Before prescribing workouts                     | Training zones, field testing protocols                   |
-| `skill/reference/load-management.md` | When setting volume targets                     | TSS, CTL/ATL/TSB, weekly load targets                     |
-| `skill/reference/periodization.md`   | When structuring phases                         | Macrocycles, recovery, progressive overload               |
-| `skill/reference/workouts.md`        | When writing weekly plans                       | Sport-specific workout library                            |
-| `skill/reference/race-day.md`        | Final section of plan                           | Pacing strategy, nutrition                                |
-| `skill/reference/strength.md`        | When writing strength sessions                  | Strength phases, plyometrics, left/right check            |
-| `skill/reference/execution.md`       | Reviewing a session, or advising how to run one | Easy and quality execution, heat, treadmill, data quality |
-| `skill/reference/fuelling.md`        | Fuelling a session, or food and fluid questions | Daily eating, session fuel, gut training, sweat test      |
-| `skill/reference/swim-technique.md`  | Swim technique or open-water prep               | Fault order, drills, kit, open water                      |
-| `skill/reference/coach-sheet.md`     | When a Google Sheet holds the plan              | The coach sheet's tables and how to write them            |
-| `skill/reference/reviews.md`         | For any check-in or review                      | Daily, weekly, block and season reviews                   |
+| File                           | When to Read                                    | Contents                                                  |
+| ------------------------------ | ----------------------------------------------- | --------------------------------------------------------- |
+| `reference/queries.md`         | First step of assessment                        | SQL queries for athlete analysis                          |
+| `reference/assessment.md`      | After running queries                           | How to interpret data, validate with athlete              |
+| `reference/zones.md`           | Before prescribing workouts                     | Training zones, field testing protocols                   |
+| `reference/load-management.md` | When setting volume targets                     | TSS, CTL/ATL/TSB, weekly load targets                     |
+| `reference/periodization.md`   | When structuring phases                         | Macrocycles, recovery, progressive overload               |
+| `reference/workouts.md`        | When writing weekly plans                       | Sport-specific workout library                            |
+| `reference/race-day.md`        | Final section of plan                           | Pacing strategy, nutrition                                |
+| `reference/strength.md`        | When writing strength sessions                  | Strength phases, plyometrics, left/right check            |
+| `reference/execution.md`       | Reviewing a session, or advising how to run one | Easy and quality execution, heat, treadmill, data quality |
+| `reference/fuelling.md`        | Fuelling a session, or food and fluid questions | Daily eating, session fuel, gut training, sweat test      |
+| `reference/swim-technique.md`  | Swim technique or open-water prep               | Fault order, drills, kit, open water                      |
+| `reference/coach-sheet.md`     | When a Google Sheet holds the plan              | The coach sheet's tables and how to write them            |
+| `reference/reviews.md`         | For any check-in or review                      | Daily, weekly, block and season reviews                   |
 
 Each rule in the reference files names its source and an evidence label: **research** (published studies), **coach's experience** (a named coach's practice), **not checked** (a claim nobody has checked against its source), or **Claude's judgement** (Claude's own application of the method). Carry the label into any proposal built on the rule.
 
@@ -262,14 +262,14 @@ Each rule in the reference files names its source and an evidence label: **resea
 
 **If using Strava:**
 
-1. Read `skill/reference/queries.md` and run the assessment queries
-2. Read `skill/reference/assessment.md` to interpret the results
+1. Read `reference/queries.md` and run the assessment queries
+2. Read `reference/assessment.md` to interpret the results
 
 **If using manual data:**
 
 1. Ask the questions outlined in "Option B: Manual Data Entry" above
 2. Build the assessment object from their responses
-3. Read `skill/reference/assessment.md` for context on interpreting fitness levels
+3. Read `reference/assessment.md` for context on interpreting fitness levels
 
 ### Phase 2: Athlete Validation
 
@@ -279,25 +279,25 @@ Each rule in the reference files names its source and an evidence label: **resea
 
 ### Phase 3: Zone & Load Setup
 
-6. Read `skill/reference/zones.md` to establish training zones
-7. Read `skill/reference/load-management.md` for TSS/CTL targets
+6. Read `reference/zones.md` to establish training zones
+7. Read `reference/load-management.md` for TSS/CTL targets
 
 ### Phase 4: Plan Design
 
-8. Read `skill/reference/periodization.md` for phase structure
-9. Read `skill/reference/workouts.md` to build weekly sessions, `skill/reference/strength.md` for strength sessions and `skill/reference/fuelling.md` for long-session fuel
+8. Read `reference/periodization.md` for phase structure
+9. Read `reference/workouts.md` to build weekly sessions, `reference/strength.md` for strength sessions and `reference/fuelling.md` for long-session fuel
 10. Calculate weeks until event, design phases
 
 ### Phase 5: Plan Delivery
 
-11. Read `skill/reference/race-day.md` for race execution section
+11. Read `reference/race-day.md` for race execution section
 12. Write the plan as JSON, then render to HTML (see output format below)
 
 ---
 
 ## Plan Output Format
 
-**With the Google Sheets connector:** deliver the plan as rows in a coach sheet. Read `skill/reference/coach-sheet.md`, write the season to `Weeks`, the first block to `Sessions`, the test results and zones to `Tests`, and what the athlete told you to `Profile` and `Decisions`. Then build the plan view described there. The "Durations must add up" rule below applies to each `Sessions` row.
+**With the Google Sheets connector:** deliver the plan as rows in a coach sheet. Read `reference/coach-sheet.md`, write the season to `Weeks`, the first block to `Sessions`, the test results and zones to `Tests`, and what the athlete told you to `Profile` and `Decisions`. Then build the plan view described there. The "Durations must add up" rule below applies to each `Sessions` row.
 
 **Without it:** output the training plan as structured JSON, then render to HTML, as follows.
 
