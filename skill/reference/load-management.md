@@ -161,8 +161,29 @@ Read these over 3–10 days against the athlete's own baseline, never from a sin
 - **HRV** moves earlier: a 7-day average 10% or more below baseline means reduce intensity. An athlete whose HRV normally swings widely needs a bigger drop before it means anything.
 - **Daily scores:** two or more low scores for 3 or more days means back off; sleep and mood both low is the burnout pattern.
 - After 30 logged days, judge each marker against the athlete's own spread: more than 1 SD from the 30-day mean for 3–5 days, or more than 2 SD for two days.
+- **Output against HR and feel:** power or pace at the same HR and feel, holding steady or improving, plus mood and still looking forward to training, is the best recovery trend (Bu; coach's experience).
+- **Heavy starts:** several sessions in a row that start heavy and only improve as they go, each a little worse, mean the athlete is about to tip over (Bakken; coach's experience). The daily legs score carries it; ask how springy the legs feel on stairs and in the first minutes of sessions.
 
 Before blaming training load for a bad trend, rule out illness, poor sleep, under-fuelling, alcohol and life stress: the body adds them all to one stress total.
+
+### Overreaching
+
+Training load has three outcomes: too little stress gives no adaptation (the most common cause of a plateau); stress above capacity with enough recovery gives adaptation; stress far above capacity, or without recovery, gives a plateau, lost performance and illness or injury risk. A plateau has two opposite fixes, so find which one before acting (Galpin; coach's experience).
+
+| Stage                       | Recovery needed                  | Outcome                                                |
+| --------------------------- | -------------------------------- | ------------------------------------------------------ |
+| Overload                    | 1–3 days                         | Back better: normal training                           |
+| Functional overreaching     | Days to about 2 weeks, less load | Back better: what a block plus recovery week should do |
+| Non-functional overreaching | Weeks to months                  | Back to baseline only                                  |
+| Overtraining syndrome       | Months or more                   | Rare; more likely in endurance sports                  |
+
+The continuum follows the ECSS/ACSM consensus (Meeusen 2013; research, not re-checked). If a few easy days fix it, it wasn't overtraining.
+
+- **Warning line:** a recovery week that doesn't restore the athlete (still flat, tests down, motivation low) points to non-functional overreaching. Extend easy training, and suggest a doctor to rule out illness before adding load (Claude's judgement).
+- **Too little stress** is the first suspect in a plateau. Check that the planned load was actually done before calling it fatigue (`reviews.md`, "Block review").
+- **Acute vs chronic fixes:** caffeine, music and a motivating video lift today's session. Sleep, reduced training, more food, social connection and less stress repair accumulated fatigue (Galpin; coach's experience).
+- **Recovery extras** (cold or warm baths, massage, rolling) rank far below getting intensity and weekly structure right (Bakken; coach's experience). See `strength.md` for soft-tissue work.
+- **Blood markers** are optional. Judge them against the athlete's own baseline, not reference ranges, and only through a doctor.
 
 ### Recovery Week Structure
 

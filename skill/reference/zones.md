@@ -2,6 +2,27 @@
 
 Professional coaching requires accurate training zones derived from field tests, not arbitrary percentages of max HR.
 
+## 80/20 Zones
+
+Sessions taken from the 80/20 Workout Library (`workouts.md`) use 80/20's zones. In those sessions, "Zone 3" means 80/20 Zone 3, not Friel's. Zones X and Y are the gaps between zones. They aren't training targets: drifting into one means the session missed its zone.
+
+| Zone | Plan word | Run, % of LTHR | Bike, % of FTP | Swim, % of threshold speed |
+| ---- | --------- | -------------- | -------------- | -------------------------- |
+| 1    | very easy | under 81       | 50–70          | 75–84                      |
+| 2    | easy      | 81–89          | 70–83          | 84–91                      |
+| X    | avoid     | 90–95          | 83–91          | 91–96                      |
+| 3    | threshold | 96–100         | 91–100         | 96–100                     |
+| Y    | avoid     | 101–102        | 100–102        | 100–102                    |
+| 4    | hard      | 103–105        | 102–110        | 102–106                    |
+| 5    | hard      | 106 and up     | over 110       | over 106                   |
+
+The bike column was checked against 80/20's intensity pages in November 2026 (research). The run and swim columns are back-calculated from 80/20 zone-calculator output (not checked against the page). Use 80/20's calculator when it disagrees.
+
+- **Swim pace from speed:** zone pace = threshold pace ÷ (% of speed). At a 2:00/100 m threshold, 90% speed is 2:13/100 m. Pace-based and speed-based percentages diverge at easy intensities, so never take a percentage of pace directly.
+- **Easy means below the first threshold.** Zones 1–2 sit below LT1 (Seiler; research). For easy sessions the ceiling matters more than the floor. Sliding into high Zone 1 on a hot day is fine; sliding into X is the common failure.
+- **Rough mapping to Friel's zones:** 80/20 Zones 1–2 ≈ Friel 1–2; X ≈ Friel 3 (tempo); 80/20 Zone 3 ≈ Friel 4 to 5a; Zone 4 ≈ 5b; Zone 5 ≈ 5c. Use one system per plan.
+- **When X has a job:** for half and full Ironman athletes, race intensity falls in or near X. In the last 12 weeks, 80/20 adds a small dose of race-pace work there (see "Race-specific phase" in `periodization.md`). Outside that, X stays a gap.
+
 ## Lactate Threshold Heart Rate (LTHR) Zones
 
 LTHR is the heart rate at lactate threshold—the intensity you could sustain for approximately 60 minutes in a race. It's more accurate than max HR for prescribing training.
@@ -75,11 +96,39 @@ _Alternative: 2x8 minute test with 10min recovery; average power × 0.90 = FTP_
 _Example: 400m in 6:40 (400 sec), 200m in 3:00 (180 sec)_
 _CSS = 200m / 220 sec = 0.909 m/sec = 1:50/100m_
 
+### 80/20 Test Versions
+
+- **Run, 80/20 LTHR time trial:** after the warm-up, run the hardest effort you can hold for 20 minutes, with a lap at 5 minutes. LTHR is the average HR of the last 15 minutes. Hold back slightly in the first 5. 80/20 notes that LTHR is specific to the conditions of the test, so test where the key runs happen (research: 80/20 help centre).
+- **Swim, STT2:** 200 Zone 1, 400 all-out, 2 min rest, 200 all-out, 2 min rest, 200 Zone 1. CSS is computed from the 400 and 200 as above. The library labels the two swims Zone 3. Swim them all-out, because CSS needs maximal efforts.
+- **Bike:** the library has no cycling test. Use the 20-minute FTP test above.
+
+### Same Conditions Every Time
+
+A test only compares with an earlier one under the same protocol and conditions (Galpin, "bad data is worse than no data"; coach's experience). Fix:
+
+- place, surface and time of day
+- warm-up, including any surges in it
+- shoes, bike setup and fan
+- fuelling before the test, and the 48 hours before it
+
+Record anything that differs in the `Tests` row's Conditions column. Name the protocol exactly. When a protocol changes, the next test starts a new series and can't be compared with the old one.
+
+Plan tests in recovery weeks, when the athlete is fresh. Move a test rather than run it sick or just after an illness, because the result would set zones too low.
+
+### Reading a Test
+
+- **A threshold is a band, not a line.** Heat, accumulated fatigue, low carbohydrate and long efforts beforehand all lower it. One all-out 3-minute effort can cut critical power by about 7%, and 2 hours of heavy riding by about 9% (critical-power researchers on That Triathlon Show; not checked). Start threshold sessions at the low end of Zone 3 and build only if it feels sustainable. Read a retest that comes in a little lower on a hot day as noise, not lost fitness.
+- **FTP vs critical power:** in triathletes the two usually agree (Eriksson; coach's experience). A 3-trial CP test costs more recovery than one 20-minute test. Keep whichever protocol the athlete already uses.
+- **What a test reflects:** a retest 3–4 weeks into a block mostly shows the quality sessions and recovery from any recent illness. Gains from added easy volume take 2–3 months to show (That Triathlon Show hosts on a 6-week study; coach's experience). Judge volume at the later retests.
+- **Early gains, later plateaus:** athletes new to structured training in a sport improve on almost anything for a few months, then slow (Seiler; research). A stall is no concern until 4 weeks (less trained) to 8 weeks (well trained) of consistent training (Galpin; coach's experience). Before blaming the training for a stall, follow the order in `reviews.md` ("Block review", step 3).
+- **Gap analysis:** after each test, express the gap between the goal performance and today as a percentage per sport. Put time where the return is largest, and re-decide after each test, not once a season (Bu; coach's experience).
+
 ### When to Retest
 
-- Every 6-8 weeks during base/build phases
+- Every 6-8 weeks during base/build phases, or in each recovery week for athletes on a 3:1 or 4:1 pattern
 - After recovery weeks (when fresh)
 - If perceived effort no longer matches prescribed zones
+- After an infection, once resting HR and HRV are back to baseline
 
 ---
 
@@ -103,6 +152,10 @@ For athletes with known race times:
 - Repetition pace: Threshold - 25-35 sec/km
 
 ---
+
+## Without a Power Meter Outdoors
+
+An athlete with power only on the indoor trainer sets outdoor HR caps from their own indoor rides. Read the HR at the top of their Zone 1 and Zone 2 power on recent steady indoor rides. Those HRs become the outdoor caps, with RPE 4 or less as the easy limit (Claude's judgement). Heat raises HR at the same power, so on hot days outdoors, the HR cap protects the athlete better than any power estimate. Strava's estimated power is not a measurement.
 
 ## Power-Based Training (Cycling)
 

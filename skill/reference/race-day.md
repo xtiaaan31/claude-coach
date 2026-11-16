@@ -19,6 +19,8 @@
 - Find feet to draft, but don't sprint to get there
 - Save legs by kicking minimally (2-beat kick)
 - Target: Slightly slower than pool CSS pace (open water adds 5-10%)
+- Sight and breathe on separate strokes; draft on feet, not hips (`swim-technique.md`, "Open Water")
+- Non-wetsuit swims: keep the body-position cues going in the second half
 
 ### Bike
 
@@ -33,6 +35,13 @@
 | Olympic | 80-85% |
 | 70.3 | 70-77% |
 | Ironman | 65-72% |
+
+For a 70.3, published intensity factors (NP ÷ FTP) run 0.70–0.72 for first-timers or bike-limited athletes and 0.73–0.76 for most trained age-groupers (Roadman Cycling). Best Bike Split gives 0.75–0.87 for 2.5–3-hour splits; Allen and Coggan give 0.83–0.87 for faster riders (not checked). An IF of 0.70–0.78 sits in 80/20 Zone 2. On a flat course, age-groupers aim for second-half power about 1–2% above the first half (Friel).
+
+- **Race pace is a number**, set from the latest tests and rehearsed in the race-specific phase (`periodization.md`). Zones are too broad for a race target.
+- **Without a race power meter,** pace the bike by HR and RPE. Calibrate HR-at-power in race-pace rides indoors, and expect heat to raise HR at the same power.
+- **Heat:** race power is limited by heat, cooling and fuelling, not only FTP. Rehearse the cooling and fuelling in hot key sessions.
+- **Practise the chaos:** test in training what can go wrong (bottles, gels, transitions, sighting), so race day holds no first attempts (Galpin; coach's experience).
 
 ### Run off Bike
 
@@ -158,6 +167,8 @@ Race:
 | 5+ hours       | Low/no caffeine start, save for final 2-3 hours | Caffeinated cola/gels when needed |
 
 **Caution:** Practice caffeine timing in training. Some athletes get GI distress.
+
+When the athlete wants to quit in a long event, Edgley's rule is to take carbohydrate and a little caffeine and decide again in 20 minutes: fatigue is partly the brain pulling the handbrake early (coach's experience). Day-to-day fuelling and gut training: `fuelling.md`.
 
 ---
 
