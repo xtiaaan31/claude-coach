@@ -1,289 +1,715 @@
-# Sport-Specific Workout Library
+# 80/20 Workout Library
+
+Source: https://www.8020endurance.com/8020-workout-library/
+
+The library is a set of structured swim, bike, and run workouts from the 80/20 Triathlon book. A formal plan is not required to use them. Workout codes are creation-order IDs, so the numbers do not indicate difficulty. Zones are 80/20 intensity zones 1-5.
+
+Intensity distribution: roughly 80% of training is low intensity (Zones 1-2) and 20% is moderate to high intensity (Zones 3-5). Workout names tell you the category, and the zone pattern in each row tells you the stress.
+
+Notes on what the library does not include:
+
+- No brick workouts. Combine a bike and a run on the same day yourself.
+- No strength workouts. 80/20 publishes a separate Strength Library (https://www.8020endurance.com/strength-library/).
+- Swim workouts come in 25m, 25y, and 50m pool versions.
+
+---
 
 ## Swimming
 
-### Workout Types
+Codes: `S` + type + number. Distances are meters or yards: every workout exists in 25m, 25y, and 50m pool versions with the same distances. Rest is in seconds (e.g., 15" = 15 seconds).
 
-| Session Type      | Structure                          | Zone | When to Use              |
-| ----------------- | ---------------------------------- | ---- | ------------------------ |
-| Technique         | 6-8 x 50m drill/swim, 15s rest     | 1-2  | Every session warm-up    |
-| Aerobic Endurance | 3-5 x 400m @ CSS+10s, 20s rest     | 2    | Base phase, 1-2x/week    |
-| Threshold         | 8-12 x 100m @ CSS, 10-15s rest     | 4    | Build phase, 1x/week     |
-| VO2max            | 6-8 x 100m @ CSS-5s, 20-30s rest   | 5    | Peak phase, 1x/week      |
-| Race-Specific     | 1-2 x race distance @ goal pace    | 3-4  | Every 2-3 weeks in build |
-| Open Water        | Continuous swim, sighting practice | 2-3  | Monthly if racing OW     |
+### Swim Recovery (SRe)
 
-### Sample Sessions (2500m total)
+| Code | Distance (m or y) | Description |
+| ---- | ----------------- | ----------- |
+| SRe1 | 1500              | 1500 Zone 1 |
+| SRe2 | 1600              | 1600 Zone 1 |
+| SRe3 | 1750              | 1750 Zone 1 |
+| SRe4 | 2000              | 2000 Zone 1 |
+| SRe5 | 2250              | 2250 Zone 1 |
+| SRe6 | 2500              | 2500 Zone 1 |
+| SRe7 | 2750              | 2750 Zone 1 |
+| SRe8 | 3000              | 3000 Zone 1 |
+| SRe9 | 1000              | 1000 Zone 1 |
 
-**Aerobic Endurance:**
+### Swim Foundation (SF)
 
-```
-Warm-up: 300m easy, 4x50m drill (catch-up, fingertip drag)
-Main: 5 x 400m @ CSS+8sec/100m, 20s rest
-Cool-down: 200m easy pull
-```
+| Code | Distance (m or y) | Description                         |
+| ---- | ----------------- | ----------------------------------- |
+| SF1  | 1500              | 300 Zone 1, 900 Zone 2, 300 Zone 1  |
+| SF2  | 1600              | 300 Zone 1, 1000 Zone 2, 300 Zone 1 |
+| SF3  | 1750              | 300 Zone 1, 1150 Zone 2, 300 Zone 1 |
+| SF4  | 2000              | 300 Zone 1, 1400 Zone 2, 300 Zone 1 |
+| SF5  | 2250              | 300 Zone 1, 1650 Zone 2, 300 Zone 1 |
+| SF6  | 2500              | 300 Zone 1, 1900 Zone 2, 300 Zone 1 |
+| SF7  | 2750              | 250 Zone 1, 2250 Zone 2, 250 Zone 1 |
+| SF8  | 3000              | 250 Zone 1, 2500 Zone 2, 250 Zone 1 |
+| SF9  | 3500              | 250 Zone 1, 3000 Zone 2, 250 Zone 1 |
+| SF10 | 4000              | 250 Zone 1, 3500 Zone 2, 250 Zone 1 |
 
-**Threshold Development:**
+### Swim Aerobic Intervals (SAe)
 
-```
-Warm-up: 400m easy, 4x50m build
-Pre-main: 4 x 100m descend 1-4
-Main: 3 x (4 x 100m @ CSS, 10s rest), 60s between sets
-Cool-down: 200m easy
-```
+| Code | Distance (m or y) | Description                                        |
+| ---- | ----------------- | -------------------------------------------------- |
+| SAe1 | 2500              | 250 Zone 1, 4 x (500 Zone 2, 60" rest) 250 Zone 1  |
+| SAe2 | 3000              | 250 Zone 1, 5 x (500 Zone 2, 60" rest) 250 Zone 1  |
+| SAe3 | 3500              | 250 Zone 1, 6 x (500 Zone 2, 60" rest) 250 Zone 1  |
+| SAe4 | 3500              | 250 Zone 1, 3 x (1000 Zone 2, 60" rest) 250 Zone 1 |
+| SAe5 | 3800              | 150 Zone 1, 7 x (500 Zone 2, 60" rest) 150 Zone 1  |
+| SAe6 | 4500              | 250 Zone 1, 4 x (1000 Zone 2, 60" rest) 250 Zone 1 |
+| SAe7 | 2000              | 250 Zone 1, 3 x (500 Zone 2, 60" rest) 250 Zone 1  |
 
-**VO2max (advanced):**
+### Swim Cruise Interval (SCI)
 
-```
-Warm-up: 300m, 6x50m drill/swim
-Main: 8 x 100m @ CSS-5sec, 30s rest
-       4 x 50m FAST, 30s rest
-Cool-down: 300m easy
-```
+| Code  | Distance (m or y) | Description                                                               |
+| ----- | ----------------- | ------------------------------------------------------------------------- |
+| SCI1  | 1500              | 500 Zone 1, 5 x (100 Zone 3/15" rest) 500 Zone 1                          |
+| SCI2  | 2000              | 500 Zone 1, 5 x (100 Zone 3/15" rest) 500 Zone 2, 500 Zone 1              |
+| SCI3  | 2500              | 500 Zone 1, 500 Zone 2, 5 x (100 Zone 3/15" rest) 500 Zone 2, 500 Zone 1  |
+| SCI4  | 1500              | 250 Zone 1, 10 x (100 Zone 3/15" rest) 250 Zone 1                         |
+| SCI5  | 2000              | 250 Zone 1, 10 x (100 Zone 3/15" rest) 500 Zone 2, 250 Zone 1             |
+| SCI6  | 2500              | 250 Zone 1, 500 Zone 2, 10 x (100 Zone 3/15" rest) 500 Zone 2, 250 Zone 1 |
+| SCI7  | 3000              | 250 Zone 1, 500 Zone 2, 15 x (100 Zone 3/15" rest) 500 Zone 2, 250 Zone 1 |
+| SCI8  | 2000              | 500 Zone 1, 5 x (200 Zone 3/15" rest) 500 Zone 1                          |
+| SCI9  | 2400              | 500 Zone 1, 7 x (200 Zone 3/15" rest) 500 Zone 1                          |
+| SCI10 | 3000              | 500 Zone 1, 10 x (200 Zone 3/15" rest) 500 Zone 1                         |
+| SCI11 | 1900              | 500 Zone 1, 3 x (300 Zone 3/15" rest) 500 Zone 1                          |
+| SCI12 | 2500              | 500 Zone 1, 5 x (300 Zone 3/15" rest) 500 Zone 1                          |
+| SCI13 | 3500              | 500 Zone 1, 500 Zone 2, 5 x (300 Zone 3/15" rest) 500 Zone 2, 500 Zone 1  |
+| SCI14 | 1200              | 300 Zone 1, 3 x (200 Zone 3/15" rest) 300 Zone 1                          |
+| SCI15 | 1500              | 300 Zone 1, 3 x (300 Zone 3/15" rest) 300 Zone 1                          |
+| SCI16 | 1750              | 500 Zone 1, 5 x (200 Zone 3/15" rest) 250 Zone 1                          |
+| SCI17 | 1500              | 150 Zone 1, 6 x (200 Zone 3/15" rest) 150 Zone 1                          |
 
-### Common Limiters & Solutions
+### Swim Tempo (ST)
 
-| Limiter            | Indicators                       | Prescription                         |
-| ------------------ | -------------------------------- | ------------------------------------ |
-| Technique          | High stroke count, early fatigue | 30% of swim volume as drills         |
-| Aerobic base       | Can't sustain pace beyond 400m   | More Zone 2 continuous swimming      |
-| Threshold          | Pace drops sharply in sets       | More CSS-pace work with short rest   |
-| Open water anxiety | Pool-only history                | Monthly OW sessions, sighting drills |
+| Code | Distance (m or y) | Description                                      |
+| ---- | ----------------- | ------------------------------------------------ |
+| ST1  | 1500              | 250 Zone 1, 500 Zone 3, 500 Zone 2, 250 Zone 1   |
+| ST2  | 1750              | 250 Zone 1, 500 Zone 3, 750 Zone 2, 250 Zone 1   |
+| ST3  | 2000              | 250 Zone 1, 500 Zone 3, 1000 Zone 2, 250 Zone 1  |
+| ST4  | 2250              | 250 Zone 1, 750 Zone 3, 1000 Zone 2, 250 Zone 1  |
+| ST5  | 2500              | 250 Zone 1, 1000 Zone 3, 1000 Zone 2, 250 Zone 1 |
+| ST6  | 3000              | 500 Zone 1, 1000 Zone 3, 1000 Zone 2, 500 Zone 1 |
+| ST7  | 2000              | 500 Zone 1, 1000 Zone 3, 500 Zone 1              |
+| ST8  | 1750              | 500 Zone 1, 1000 Zone 3, 250 Zone 1              |
+
+### Swim Mixed Intervals (SMI)
+
+| Code | Distance (m or y) | Description                                                                                                     |
+| ---- | ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| SMI1 | 1750              | 500 Zone 1, 5 x (100 Zone 3/15" rest) 250 Zone 1, 5 x (50 Zone 4/20" rest) 250 Zone 1                           |
+| SMI2 | 1750              | 500 Zone 1, 5 x (100 Zone 3/15" rest) 250 Zone 1, 10 x (25 Zone 5/10" rest) 250 Zone 1                          |
+| SMI3 | 2350              | 250 Zone 1, 10 x (100 Zone 3/15" rest), 500 Zone 1, 7 x (50 Zone 4/20" rest) 250 Zone 1                         |
+| SMI4 | 3000              | 250 Zone 1, 500 Zone 2, 10 x (100 Zone 3/15" rest), 150 Zone 1, 7 x (50 Zone 4/20" rest) 500 Zone 2, 250 Zone 1 |
+| SMI5 | 2400              | 300 Zone 1, 10 x (100 Zone 3/15" rest), 300 Zone 1, 10 x (50 Zone 4/20" rest) 300 Zone 1                        |
+| SMI6 | 2500              | 500 Zone 1, 5 x (200 Zone 3/15" rest) 250 Zone 1, 10 x (25 Zone 5/10" rest) 500 Zone 1                          |
+| SMI7 | 3000              | 500 Zone 1, 5 x (200 Zone 3/15" rest) 250 Zone 1, 10 x (25 Zone 5/10" rest) 500 Zone 2, 500 Zone 1              |
+| SMI8 | 1900              | 500 Zone 2, 3 x (100 Zone 3/15" rest), 500 Zone 1, 6 x (50 Zone 4/20" rest) 300 Zone 1                          |
+
+### Swim Short Intervals (SSI)
+
+| Code | Distance (m or y) | Description                                                               |
+| ---- | ----------------- | ------------------------------------------------------------------------- |
+| SSI1 | 1750              | 250 Zone 1, 500 Zone 2, 10 x (25 Zone 5/10" rest) 500 Zone 2, 250 Zone 1  |
+| SSI2 | 2300              | 250 Zone 1, 500 Zone 2, 12 x (25 Zone 5/10" rest) 1000 Zone 2, 250 Zone 1 |
+
+### Swim Speed Play (SSP)
+
+| Code | Distance (m or y) | Description                                                               |
+| ---- | ----------------- | ------------------------------------------------------------------------- |
+| SSP1 | 1750              | 250 Zone 1, 500 Zone 2, 5 x (50 Zone 4/20" rest) 500 Zone 2, 250 Zone 1   |
+| SSP2 | 2100              | 250 Zone 1, 500 Zone 2, 7 x (50 Zone 4/20" rest) 500 Zone 2, 500 Zone 1   |
+| SSP3 | 2500              | 500 Zone 1, 500 Zone 2, 10 x (50 Zone 4/20" rest) 500 Zone 2, 500 Zone 1  |
+| SSP4 | 3100              | 500 Zone 1, 500 Zone 2, 12 x (50 Zone 4/20" rest) 1000 Zone 2, 500 Zone 1 |
+| SSP5 | 1500              | 250 Zone 1, 500 Zone 2, 10 x (50 Zone 4/20" rest) 250 Zone 1              |
+| SSP6 | 1750              | 250 Zone 1, 500 Zone 2, 15 x (50 Zone 4/20" rest) 250 Zone 1              |
+| SSP7 | 1200              | 250 Zone 1, 200 Zone 2, 10 x (50 Zone 4/20" rest) 250 Zone 1              |
+
+### Swim Time Trial (STT) and Swim Taper (STa)
+
+| Code | Distance (m or y) | Description                                                           |
+| ---- | ----------------- | --------------------------------------------------------------------- |
+| STa1 | 1000              | 400 Zone 1, 4 x (50 Zone 4 / 30" rest), 400 Zone 1                    |
+| STT1 | 1850              | 250 Zone 1, 400 Zone 3, 120" rest, 200 Zone 3, 120" rest, 1000 Zone 1 |
+| STT2 | 1000              | 200 Zone 1, 400 Zone 3, 120" rest, 200 Zone 3, 120" rest, 200 Zone 1  |
 
 ---
 
 ## Cycling
 
-### Workout Types
+Codes: `C` + type + number. Durations are in minutes.
 
-| Session Type | Structure                                    | Zone/Power   | When to Use                    |
-| ------------ | -------------------------------------------- | ------------ | ------------------------------ |
-| Endurance    | 2-5hr steady                                 | 56-75% FTP   | Weekly, base phase emphasis    |
-| Tempo        | 2-3 x 20min continuous                       | 76-90% FTP   | Base/build, muscular endurance |
-| Sweet Spot   | 2-3 x 20-30min                               | 88-93% FTP   | Build phase, 1-2x/week         |
-| Threshold    | 3-4 x 10-12min, 5min rest                    | 95-105% FTP  | Build/peak, 1x/week            |
-| VO2max       | 5-6 x 4-5min, 4min rest                      | 106-120% FTP | Peak phase, 1x/week            |
-| Over-Unders  | 3 x (8min: 2min @95%, 1min @105%), 5min rest | 4-5a         | Threshold extension            |
-| Hill Repeats | 4-6 x 5-8min climb, descent recovery         | 100-110% FTP | Climbing races                 |
+### Cycling Recovery (CRe)
 
-### Sample Sessions
+| Code  | Minutes | Description        |
+| ----- | ------- | ------------------ |
+| CRe1  | 20      | 20 minutes Zone 1  |
+| CRe2  | 25      | 25 minutes Zone 1  |
+| CRe3  | 30      | 30 minutes Zone 1  |
+| CRe4  | 35      | 35 minutes Zone 1  |
+| CRe5  | 40      | 40 minutes Zone 1  |
+| CRe6  | 45      | 45 minutes Zone 1  |
+| CRe7  | 50      | 50 minutes Zone 1  |
+| CRe8  | 55      | 55 minutes Zone 1  |
+| CRe9  | 60      | 60 minutes Zone 1  |
+| CRe10 | 75      | 75 minutes Zone 1  |
+| CRe11 | 90      | 90 minutes Zone 1  |
+| CRe12 | 105     | 105 minutes Zone 1 |
+| CRe13 | 120     | 120 minutes Zone 1 |
+| CRe14 | 150     | 150 minutes Zone 1 |
 
-**Sweet Spot (Build Phase Staple):**
+### Cycling Foundation (CF)
 
-```
-Warm-up: 20min Zone 2, include 2x1min high-cadence
-Main: 3 x 25min @ 88-92% FTP, 5min easy between
-Cool-down: 15min Zone 1
-Total: 2hr, ~80 TSS
-```
+| Code | Minutes | Description                                                  |
+| ---- | ------- | ------------------------------------------------------------ |
+| CF1  | 20      | 5 minutes in Zone 1, 15 minutes Zone 2                       |
+| CF2  | 25      | 5 minutes in Zone 1, 15 minutes Zone 2, 5 minutes Zone 1     |
+| CF3  | 30      | 5 minutes in Zone 1, 20 minutes Zone 2, 5 minutes Zone 1     |
+| CF4  | 35      | 5 minutes in Zone 1, 25 minutes Zone 2, 5 minutes Zone 1     |
+| CF5  | 40      | 5 minutes in Zone 1, 30 minutes Zone 2, 5 minutes Zone 1     |
+| CF6  | 45      | 5 minutes in Zone 1, 35 minutes Zone 2, 5 minutes Zone 1     |
+| CF7  | 50      | 5 minutes in Zone 1, 40 minutes Zone 2, 5 minutes Zone 1     |
+| CF8  | 55      | 5 minutes in Zone 1, 45 minutes Zone 2, 5 minutes Zone 1     |
+| CF9  | 60      | 5 minutes in Zone 1, 50 minutes Zone 2, 5 minutes Zone 1     |
+| CF10 | 60      | 15 minutes in Zone 1, 35 minutes Zone 2, 10 minutes Zone 1   |
+| CF11 | 90      | 30 minutes in Zone 1, 50 minutes Zone 2, 10 minutes Zone 1   |
+| CF12 | 105     | 40 minutes in Zone 1, 55 minutes Zone 2, 10 minutes Zone 1   |
+| CF13 | 120     | 50 minutes in Zone 1, 60 minutes Zone 2, 10 minutes Zone 1   |
+| CF14 | 135     | 60 minutes in Zone 1, 65 minutes Zone 2, 10 minutes Zone 1   |
+| CF15 | 150     | 70 minutes in Zone 1, 70 minutes Zone 2, 10 minutes Zone 1   |
+| CF16 | 165     | 80 minutes in Zone 1, 75 minutes Zone 2, 10 minutes Zone 1   |
+| CF17 | 180     | 90 minutes in Zone 1, 80 minutes Zone 2, 10 minutes Zone 1   |
+| CF18 | 195     | 100 minutes in Zone 1, 85 minutes Zone 2, 10 minutes Zone 1  |
+| CF19 | 210     | 110 minutes in Zone 1, 90 minutes Zone 2, 10 minutes Zone 1  |
+| CF20 | 225     | 120 minutes in Zone 1, 95 minutes Zone 2, 10 minutes Zone 1  |
+| CF21 | 240     | 130 minutes in Zone 1, 100 minutes Zone 2, 10 minutes Zone 1 |
+| CF22 | 270     | 140 minutes in Zone 1, 120 minutes Zone 2, 10 minutes Zone 1 |
+| CF23 | 300     | 150 minutes in Zone 1, 140 minutes Zone 2, 10 minutes Zone 1 |
+| CF24 | 330     | 160 minutes in Zone 1, 160 minutes Zone 2, 10 minutes Zone 1 |
+| CF25 | 360     | 170 minutes in Zone 1, 180 minutes Zone 2, 10 minutes Zone 1 |
+| CF26 | 75      | 5 minutes in Zone 1, 65 minutes Zone 2, 5 minutes Zone 1     |
 
-**VO2max Development:**
+### Cycling Aerobic Intervals (CAe)
 
-```
-Warm-up: 20min progressive to Zone 3
-Main: 5 x 5min @ 110-115% FTP, 5min @ 50% FTP recovery
-Cool-down: 15min easy spin
-Total: 1:30, ~90 TSS
-```
+| Code  | Minutes | Description                                                                                      |
+| ----- | ------- | ------------------------------------------------------------------------------------------------ |
+| CAe1  | 70      | 10 minutes Zone 1, 2 x (20 minutes Zone 2/5 minutes Zone 1) 10 minutes Zone 1                    |
+| CAe2  | 90      | 15 minutes Zone 1, 3 x (15 minutes Zone 2/5 minutes Zone 1) 15 minutes Zone 1                    |
+| CAe3  | 110     | 15 minutes Zone 1, 4 x (15 minutes Zone 2/5 minutes Zone 1) 15 minutes Zone 1                    |
+| CAe4  | 121     | 20 minutes Zone 1, 3 x (20 minutes Zone 2/7 minutes Zone 1) 20 minutes Zone 1                    |
+| CAe5  | 120     | 10 minutes Zone 1, 5 x (15 minutes Zone 2/5 minutes Zone 1) 10 minutes Zone 1                    |
+| CAe6  | 128     | 10 minutes Zone 1, 4 x (20 minutes Zone 2/7 minutes Zone 1) 10 minutes Zone 1                    |
+| CAe7  | 150     | 12 minutes Zone 1, 4 x (25 minutes Zone 2/7 minutes Zone 1) 10 minutes Zone 1                    |
+| CAe8  | 180     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 10 minutes Zone 1                   |
+| CAe9  | 180     | 10 minutes Zone 1, 5 x (25 minutes Zone 2/7 minutes Zone 1) 10 minutes Zone 1                    |
+| CAe10 | 210     | 5 minutes Zone 1, 5 x (30 minutes Zone 2/10 minutes Zone 1) 5 minutes Zone 1                     |
+| CAe11 | 250     | 5 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 5 minutes Zone 1                     |
+| CAe12 | 270     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 20 minutes Zone 1                   |
+| CAe13 | 285     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 35 minutes Zone 1                   |
+| CAe14 | 300     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 50 minutes Zone 1                   |
+| CAe15 | 315     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 65 minutes Zone 1                   |
+| CAe16 | 330     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 80 minutes Zone 1                   |
+| CAe17 | 345     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 95 minutes Zone 1                   |
+| CAe18 | 360     | 10 minutes Zone 1, 6 x (30 minutes Zone 2/10 minutes Zone 1) 110 minutes Zone 1                  |
+| CAe19 | 210     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 40 minutes Zone 1                   |
+| CAe20 | 240     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 70 minutes Zone 1                   |
+| CAe21 | 270     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 100 minutes Zone 1                  |
+| CAe22 | 300     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 130 minutes Zone 1                  |
+| CAe23 | 330     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 160 minutes Zone 1                  |
+| CAe24 | 360     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 190 minutes Zone 1                  |
+| CAe25 | 390     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 220 minutes Zone 1                  |
+| CAe26 | 420     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 250 minutes Zone 1                  |
+| CAe27 | 240     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (4 minutes Zone 2/1 minute Zone 1) 205 minutes Zone 2  |
+| CAe28 | 260     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (5 minutes Zone 2/1 minute Zone 1) 222 minutes Zone 2  |
+| CAe29 | 280     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (6 minutes Zone 2/1 minute Zone 1) 239 minutes Zone 2  |
+| CAe30 | 300     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (7 minutes Zone 2/1 minute Zone 1) 256 minutes Zone 2  |
+| CAe31 | 320     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (8 minutes Zone 2/1 minute Zone 1) 273 minutes Zone 2  |
+| CAe32 | 340     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (9 minutes Zone 2/1 minute Zone 1) 290 minutes Zone 2  |
+| CAe33 | 360     | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (10 minutes Zone 2/1 minute Zone 1) 307 minutes Zone 2 |
+| CAe34 | 330     | 10 minutes Zone 1, 5 x (30 minutes Zone 2/10 minutes Zone 1) 120 minutes Zone 1                  |
+| CAe35 | 210     | 10 minutes Zone 1, 4 x (30 minutes Zone 2/10 minutes Zone 1) 40 minutes Zone 1                   |
+| CAe36 | 150     | 30 minutes Zone 1, 4 x (20 minutes Zone 2/10 minutes Zone 1)                                     |
+| CAe37 | 165     | 30 minutes Zone 1, 4 x (20 minutes Zone 2/10 minutes Zone 1), 15 minutes Zone 1                  |
 
-**Over-Under Threshold:**
+### Cycling Cruise Intervals (CCI)
 
-```
-Warm-up: 20min with 3x30s accelerations
-Main: 4 x 9min [(2min @ 95% FTP, 1min @ 108% FTP) x3], 5min rest
-Cool-down: 15min Zone 1
-Total: 1:45, ~85 TSS
-```
+| Code  | Minutes | Description                                                                                                         |
+| ----- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| CCI1  | 60      | 5 minutes Zone 1, 20 minutes Zone 2, 3 x (5 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 6 minutes Zone 1     |
+| CCI2  | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (5 minutes Zone 3/3 minutes Zone 1) 13 minutes Zone 2, 5 minutes Zone 1     |
+| CCI3  | 61      | 5 minutes Zone 1, 10 minutes Zone 2, 4 x (6 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| CCI4  | 65      | 5 minutes Zone 1, 10 minutes Zone 2, 4 x (7 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| CCI5  | 64      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (8 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1      |
+| CCI6  | 72      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (10 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| CCI7  | 80      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (12 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| CCI8  | 92      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (15 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| CCI9  | 95      | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (12 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| CCI10 | 119     | 10 minutes Zone 1, 15 minutes Zone 2, 4 x (8 minutes Zone 3/3 minutes Zone 1) 40 minutes Zone 2, 10 minutes Zone 1  |
+| CCI11 | 150     | 10 minutes Zone 1, 15 minutes Zone 2, 4 x (8 minutes Zone 3/3 minutes Zone 1) 71 minutes Zone 2, 10 minutes Zone 1  |
+| CCI12 | 60      | 10 minutes Zone 1, 10 minutes Zone 2, 2 x (10 minutes Zone 3/4 minutes Zone 1) 12 minutes Zone 1                    |
+| CCI13 | 90      | 10 minutes Zone 1, 10 minutes Zone 2, 4 x (6 minutes Zone 3/3 minutes Zone 1) 29 minutes Zone 2, 5 minutes Zone 1   |
+| CCI14 | 90      | 10 minutes Zone 1, 10 minutes Zone 2, 4 x (7 minutes Zone 3/3 minutes Zone 1) 25 minutes Zone 2, 5 minutes Zone 1   |
+| CCI15 | 90      | 10 minutes Zone 1, 10 minutes Zone 2, 4 x (8 minutes Zone 3/3 minutes Zone 1) 21 minutes Zone 2, 5 minutes Zone 1   |
+| CCI16 | 90      | 10 minutes Zone 1, 10 minutes Zone 2, 4 x (9 minutes Zone 3/3 minutes Zone 1) 17 minutes Zone 2, 5 minutes Zone 1   |
+| CCI17 | 30      | 10 minutes Zone 1, 3 x (3 minutes Zone 3/2 minutes Zone 1) 5 minutes Zone 1                                         |
+| CCI18 | 105     | 10 minutes Zone 1, 10 minutes Zone 2, 4 x (6 minutes Zone 3/3 minutes Zone 1) 44 minutes Zone 2, 5 minutes Zone 1   |
+| CCI19 | 120     | 20 minutes Zone 1, 10 minutes Zone 2, 4 x (6 minutes Zone 3/3 minutes Zone 1) 49 minutes Zone 2, 5 minutes Zone 1   |
+| CCI20 | 90      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (5 minutes Zone 3/3 minutes Zone 1) 43 minutes Zone 2, 5 minutes Zone 1     |
+| CCI21 | 90      | 10 minutes Zone 1, 10 minutes Zone 2, 2 x (10 minutes Zone 3/4 minutes Zone 1) 10 minutes Zone 2, 32 minutes Zone 1 |
+| CCI22 | 90      | 10 minutes Zone 1, 20 minutes Zone 2, 3 x (3 minutes Zone 3/2 minutes Zone 1) 30 minutes Zone 2, 15 minutes Zone 1  |
+| CCI23 | 91      | 10 minutes Zone 1, 20 minutes Zone 2, 3 x (5 minutes Zone 3/2 minutes Zone 1) 30 minutes Zone 2, 10 minutes Zone 1  |
+| CCI24 | 120     | 10 minutes Zone 1, 20 minutes Zone 2, 3 x (5 minutes Zone 3/2 minutes Zone 1) 60 minutes Zone 2, 10 minutes Zone 1  |
 
-### Brick Workouts (Triathlon-Specific)
+### Cycling Tempo (CT)
 
-| Race         | Bike Portion                       | Run Portion          | Purpose                    |
-| ------------ | ---------------------------------- | -------------------- | -------------------------- |
-| Sprint prep  | 45min w/ 10min @ race effort       | 15min @ race pace    | Transition practice        |
-| Olympic prep | 90min w/ 30min @ race effort       | 20-30min @ race pace | Pace calibration           |
-| 70.3 prep    | 3hr w/ final hour @ race effort    | 30-45min easy        | Fatigue adaptation         |
-| Ironman prep | 4-5hr w/ final 90min @ race effort | 45-60min easy        | Pacing, nutrition practice |
+| Code | Minutes | Description                                                                                 |
+| ---- | ------- | ------------------------------------------------------------------------------------------- |
+| CT1  | 60      | 15 minutes Zone 1, 5 minutes Zone 3, 40 minutes Zone 2                                      |
+| CT2  | 35      | 5 minutes Zone 1, 5 minutes Zone 2, 15 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT3  | 38      | 5 minutes Zone 1, 5 minutes Zone 2, 18 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT4  | 40      | 5 minutes Zone 1, 5 minutes Zone 2, 20 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT5  | 44      | 5 minutes Zone 1, 5 minutes Zone 2, 24 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT6  | 48      | 5 minutes Zone 1, 5 minutes Zone 2, 28 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT7  | 50      | 5 minutes Zone 1, 5 minutes Zone 2, 30 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT8  | 60      | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 10minutes Zone 2, 5 minutes Zone 1  |
+| CT9  | 75      | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 35minutes Zone 2, 5 minutes Zone 1  |
+| CT10 | 90      | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 40minutes Zone 2, 5 minutes Zone 1  |
+| CT11 | 105     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 65minutes Zone 2, 5 minutes Zone 1  |
+| CT12 | 120     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 70minutes Zone 2, 5 minutes Zone 1  |
+| CT13 | 135     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 95minutes Zone 2, 5 minutes Zone 1  |
+| CT14 | 150     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 100minutes Zone 2, 5 minutes Zone 1 |
+| CT15 | 165     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 125minutes Zone 2, 5 minutes Zone 1 |
+| CT16 | 180     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 130minutes Zone 2, 5 minutes Zone 1 |
+| CT17 | 195     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 155minutes Zone 2, 5 minutes Zone 1 |
+| CT18 | 210     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 160minutes Zone 2, 5 minutes Zone 1 |
+| CT19 | 225     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 185minutes Zone 2, 5 minutes Zone 1 |
+| CT20 | 240     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 190minutes Zone 2, 5 minutes Zone 1 |
+| CT21 | 255     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 215minutes Zone 2, 5 minutes Zone 1 |
+| CT22 | 270     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 220minutes Zone 2, 5 minutes Zone 1 |
+| CT23 | 285     | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 245minutes Zone 2, 5 minutes Zone 1 |
+| CT24 | 300     | 5 minutes Zone 1, 10 minutes Zone 2, 30 minutes Zone 3, 250minutes Zone 2, 5 minutes Zone 1 |
+| CT25 | 52      | 5 minutes Zone 1, 5 minutes Zone 2, 32 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT26 | 56      | 5 minutes Zone 1, 5 minutes Zone 2, 36 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT27 | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 40 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT28 | 65      | 5 minutes Zone 1, 5 minutes Zone 2, 45 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1   |
+| CT29 | 55      | 5 minutes Zone 1, 15 minutes Zone 2, 15 minutes Zone 3, 15 minutes Zone 2, 5 minutes Zone 1 |
+| CT30 | 60      | 5 minutes Zone 1, 15 minutes Zone 2, 20 minutes Zone 3, 15 minutes Zone 2, 5 minutes Zone 1 |
+| CT31 | 60      | 5 minutes Zone 1, 15 minutes Zone 2, 24 minutes Zone 3, 11 minutes Zone 2, 5 minutes Zone 1 |
+| CT32 | 72      | 5 minutes Zone 1, 15 minutes Zone 2, 32 minutes Zone 3, 15 minutes Zone 2, 5 minutes Zone 1 |
+| CT33 | 70      | 5 minutes Zone 1, 10 minutes Zone 2, 40 minutes Zone 3, 10 minutes Zone 2, 5 minutes Zone 1 |
+
+### Cycling Fast Finish (CFF)
+
+| Code  | Minutes | Description                                             |
+| ----- | ------- | ------------------------------------------------------- |
+| CFF1  | 25      | 5 minutes Zone 1, 15 minutes Zone 2, 5 minutes Zone 3   |
+| CFF2  | 30      | 5 minutes Zone 1, 20 minutes Zone 2, 5 minutes Zone 3   |
+| CFF3  | 30      | 5 minutes Zone 1, 15 minutes Zone 2, 10 minutes Zone 3  |
+| CFF4  | 40      | 5 minutes Zone 1, 25 minutes Zone 2, 10 minutes Zone 3  |
+| CFF5  | 42      | 5 minutes Zone 1, 25 minutes Zone 2, 12 minutes Zone 3  |
+| CFF6  | 47      | 5 minutes Zone 1, 30 minutes Zone 2, 12 minutes Zone 3  |
+| CFF7  | 52      | 5 minutes Zone 1, 35 minutes Zone 2, 12 minutes Zone 3  |
+| CFF8  | 55      | 5 minutes Zone 1, 35 minutes Zone 2, 15 minutes Zone 3  |
+| CFF9  | 60      | 5 minutes Zone 1, 40 minutes Zone 2, 15 minutes Zone 3  |
+| CFF10 | 65      | 5 minutes Zone 1, 45 minutes Zone 2, 15 minutes Zone 3  |
+| CFF11 | 75      | 5 minutes Zone 1, 55 minutes Zone 2, 15 minutes Zone 3  |
+| CFF12 | 90      | 5 minutes Zone 1, 70 minutes Zone 2, 15 minutes Zone 3  |
+| CFF13 | 105     | 5 minutes Zone 1, 85 minutes Zone 2, 15 minutes Zone 3  |
+| CFF14 | 120     | 5 minutes Zone 1, 100 minutes Zone 2, 15 minutes Zone 3 |
+| CFF15 | 135     | 5 minutes Zone 1, 115 minutes Zone 2, 15 minutes Zone 3 |
+| CFF16 | 150     | 5 minutes Zone 1, 130 minutes Zone 2, 15 minutes Zone 3 |
+| CFF17 | 165     | 5 minutes Zone 1, 145 minutes Zone 2, 15 minutes Zone 3 |
+| CFF18 | 180     | 5 minutes Zone 1, 160 minutes Zone 2, 15 minutes Zone 3 |
+| CFF19 | 195     | 5 minutes Zone 1, 175 minutes Zone 2, 15 minutes Zone 3 |
+| CFF20 | 210     | 5 minutes Zone 1, 190 minutes Zone 2, 15 minutes Zone 3 |
+| CFF21 | 225     | 5 minutes Zone 1, 205 minutes Zone 2, 15 minutes Zone 3 |
+| CFF22 | 240     | 5 minutes Zone 1, 220 minutes Zone 2, 15 minutes Zone 3 |
+| CFF23 | 270     | 5 minutes Zone 1, 250 minutes Zone 2, 15 minutes Zone 3 |
+| CFF24 | 300     | 5 minutes Zone 1, 280 minutes Zone 2, 15 minutes Zone 3 |
+| CFF25 | 330     | 5 minutes Zone 1, 310 minutes Zone 2, 15 minutes Zone 3 |
+| CFF26 | 360     | 5 minutes Zone 1, 340 minutes Zone 2, 15 minutes Zone 3 |
+| CFF27 | 60      | 5 minutes Zone 1, 45 minutes Zone 2, 10 minutes Zone 3  |
+
+### Cycling Force (CFo)
+
+| Code  | Minutes | Description                                                                                                                             |
+| ----- | ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| CFo1  | 27      | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (30 seconds Zone 5 uphill or simulated/90 seconds Zone 1) 5 minutes Zone 1                      |
+| CFo2  | 31      | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (30 seconds Zone 5 uphill or simulated/90 seconds Zone 1) 5 minutes Zone 1                      |
+| CFo3  | 33      | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1) 5 minutes Zone 1                         |
+| CFo4  | 35      | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (30 seconds Zone 5 uphill or simulated/90 seconds Zone 1) 5 minutes Zone 1                     |
+| CFo5  | 39      | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (30 seconds Zone 5 uphill or simulated/90 seconds Zone 1) 5 minutes Zone 1                     |
+| CFo6  | 39      | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1) 5 minutes Zone 1                         |
+| CFo7  | 39      | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1.5 minutes Zone 5 uphill or simulated/2.5 minutes Zone 1) 5 minutes Zone 1                    |
+| CFo8  | 45      | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1) 5 minutes Zone 1                        |
+| CFo9  | 47      | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1.5 minutes Zone 5 uphill or simulated/2.5 minutes Zone 1) 5 minutes Zone 1                    |
+| CFo10 | 51      | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1) 5 minutes Zone 1                        |
+| CFo11 | 55      | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1.5 minutes Zone 5 uphill or simulated/2.5 minutes Zone 1) 5 minutes Zone 1                   |
+| CFo12 | 63      | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1.5 minutes Zone 5 uphill or simulated/2.5 minutes Zone 1) 5 minutes Zone 1                   |
+| CFo13 | 70      | 5 minutes Zone 1, 10 minutes Zone 2, 10 x (1.5 minutes Zone 5 uphill or simulated/2.5 minutes Zone 1) 10 Zone 2, 5 minutes Zone 1       |
+| CFo14 | 135     | 15 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 70 minutes Zone 2, 5 minutes Zone 1  |
+| CFo15 | 150     | 15 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 85 minutes Zone 2, 5 minutes Zone 1  |
+| CFo16 | 180     | 15 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 115 minutes Zone 2, 5 minutes Zone 1 |
+| CFo17 | 74      | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (30 seconds Zone 5 uphill or simulated/90 seconds Zone 1), 35 minutes Zone 2, 5 minutes Zone 1 |
+| CFo18 | 78      | 5 minutes Zone 1, 10 minutes Zone 2, 6 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 40 minutes Zone 2, 5 minutes Zone 1    |
+| CFo19 | 90      | 5 minutes Zone 1, 15 minutes Zone 2, 8 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 46 minutes Zone 2                      |
+| CFo20 | 165     | 10 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 105 minutes Zone 2, 5 minutes Zone 1 |
+| CFo21 | 120     | 15 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 55 minutes Zone 2, 5 minutes Zone 1  |
+| CFo22 | 60      | 10 minutes Zone 1, 10 minutes Zone 2, 8 x (30 seconds Zone 5 uphill or simulated/60 seconds Zone 1) 28 minutes Zone 1                   |
+| CFo23 | 105     | 15 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 40 minutes Zone 2, 5 minutes Zone 1  |
+| CFo24 | 90      | 15 minutes Zone 1, 15 minutes Zone 2, 5 x (1 minute Zone 5 uphill or simulated/2 minutes Zone 1), 25 minutes Zone 2, 20 minutes Zone 1  |
+
+### Cycling Mixed Intervals (CMI)
+
+| Code | Minutes | Description                                                                                                             |
+| ---- | ------- | ----------------------------------------------------------------------------------------------------------------------- |
+| CMI1 | 120     | 20 minutes Zone 1, 2 x (20 minutes Zone 3/15 minutes Zone 1), 10 x (1 minute Zone 4/2 minutes Zone 1)                   |
+| CMI2 | 150     | 20 minutes Zone 1, 2 x (20 minutes Zone 3/15 minutes Zone 1), 10 x (1 minute Zone 4/2 minutes Zone 1) 30 minutes Zone 1 |
+| CMI3 | 165     | 20 minutes Zone 1, 2 x (20 minutes Zone 3/15 minutes Zone 1), 10 x (1 minute Zone 4/2 minutes Zone 1) 45 minutes Zone 1 |
+| CMI4 | 180     | 20 minutes Zone 1, 2 x (20 minutes Zone 3/15 minutes Zone 1), 10 x (1 minute Zone 4/2 minutes Zone 1) 60 minutes Zone 1 |
+| CMI5 | 210     | 20 minutes Zone 1, 2 x (20 minutes Zone 3/15 minutes Zone 1), 10 x (1 minute Zone 4/2 minutes Zone 1) 90 minutes Zone 1 |
+| CMI6 | 120     | 20 minutes Zone 1, 2 x (20 minutes Zone 3/15 minutes Zone 1), 5 x (1 minute Zone 4/2 minutes Zone 1) 15 minutes Zone 1  |
+
+### Cycling Anaerobic Intervals (CAn)
+
+| Code | Minutes | Description                                                                                                         |
+| ---- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| CAn1 | 60      | 15 minutes Zone 1, 4 x (2.5 minutes Zone 4/5 minutes Zone 1) 15 minutes Zone 1                                      |
+| CAn2 | 62.5    | 15 minutes Zone 1, 5 x (2.5 minutes Zone 4/5 minutes Zone 1) 10 minutes Zone 1                                      |
+| CAn3 | 60      | 10 minutes Zone 1, 6 x (2.5 minutes Zone 4/5 minutes Zone 1) 5 minutes Zone 1                                       |
+| CAn4 | 90      | 10 minutes Zone 1, 6 x (2.5 minutes Zone 4/5 minutes Zone 1) 30 minutes Zone 2, 5 minutes Zone 1                    |
+| CAn5 | 120     | 10 minutes Zone 1, 6 x (2.5 minutes Zone 4/5 minutes Zone 1) 60 minutes Zone 2, 5 minutes Zone 1                    |
+| CAn6 | 150     | 10 minutes Zone 1, 10 minutes Zone 2, 6 x (2.5 minutes Zone 4/5 minutes Zone 1) 80 minutes Zone 2, 5 minutes Zone 1 |
+| CAn7 | 92      | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (2.5 minutes Zone 4/5 minutes Zone 1) 45 minutes Zone 2, 5 minutes Zone 1 |
+| CAn8 | 150     | 10 minutes Zone 1, 10 minutes Zone 2, 4 x (2.5 minutes Zone 4/5 minutes Zone 1) 95 minutes Zone 2, 5 minutes Zone 1 |
+| CAn9 | 60      | 10 minutes Zone 1, 10 minutes Zone 2, 3 x (2.5 minutes Zone 4/5 minutes Zone 1) 17 minutes Zone 1                   |
+
+### Cycling Speed Play (CSP)
+
+| Code  | Minutes | Description                                                                                                       |
+| ----- | ------- | ----------------------------------------------------------------------------------------------------------------- |
+| CSP1  | 27      | 5 minutes Zone 1, 5 minutes Zone 2, 3 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                      |
+| CSP2  | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (1 minute Zone 4/2 minutes Zone 1) 30 minutes Zone 2, 5 minutes Zone 1    |
+| CSP3  | 31      | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                      |
+| CSP4  | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1 minute Zone 4/2 minutes Zone 1), 27 minutes Zone 2, 5 minutes Zone 1   |
+| CSP5  | 35      | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                      |
+| CSP6  | 66      | 5 minutes Zone 1, 5 minutes Zone 2, 7 x (1 minute Zone 4/2 minutes Zone 1) 30 minutes Zone 2, 5 minutes Zone 1    |
+| CSP7  | 39      | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                      |
+| CSP8  | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1 minute Zone 4/2 minutes Zone 1) 26 minutes Zone 2                      |
+| CSP9  | 42      | 5 minutes Zone 1, 5 minutes Zone 2, 9 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                       |
+| CSP10 | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 7 x (2 minutes Zone 4/2 minutes Zone 1) 17 minutes Zone 2, 5 minutes Zone 1   |
+| CSP11 | 45      | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                      |
+| CSP12 | 60      | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (2 minutes Zone 4/2 minutes Zone 1) 13 minutes Zone 2, 5 minutes Zone 1   |
+| CSP13 | 51      | 5 minutes Zone 1, 5 minutes Zone 2, 9 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                      |
+| CSP14 | 61      | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1 minute Zone 4/2 minutes Zone 1) 10 minutes Zone 2, 5 minutes Zone 1   |
+| CSP15 | 79      | 10 minutes Zone 1, 15 minutes Zone 2, 6 x (2 minute Zone 4/2 minutes Zone 1) 15 minutes Zone 2, 15 minutes Zone 1 |
+| CSP16 | 87      | 10 minutes Zone 1, 15 minutes Zone 2, 8 x (2 minute Zone 4/2 minutes Zone 1) 15 minutes Zone 2, 15 minutes Zone 1 |
+| CSP17 | 79      | 10 minutes Zone 1, 15 minutes Zone 2, 8 x (1 minute Zone 4/2 minutes Zone 1) 15 minutes Zone 2, 15 minutes Zone 1 |
+| CSP18 | 90      | 21 minutes Zone 1, 15 minutes Zone 2, 8 x (1 minute Zone 4/2 minutes Zone 1) 15 minutes Zone 2, 15 minutes Zone 1 |
 
 ---
 
 ## Running
 
-### Workout Types
+Codes: `R` + type + number. Durations are in minutes. Long runs are in miles.
 
-| Session Type     | Structure               | Pace/Zone                           | When to Use               |
-| ---------------- | ----------------------- | ----------------------------------- | ------------------------- |
-| Recovery         | 30-45min very easy      | Zone 1, E+30s/km                    | After hard days           |
-| Aerobic          | 45-75min steady         | Zone 2, E pace                      | 60-70% of run volume      |
-| Long Run         | 90min-3hr               | Zone 2, start easy, finish moderate | Weekly, primary endurance |
-| Tempo            | 20-40min continuous     | Zone 4, T pace                      | Build phase, 1x/week      |
-| Cruise Intervals | 4-6 x 1mi, 60-90s jog   | T pace                              | Threshold development     |
-| VO2max Intervals | 5-6 x 1000m, 400m jog   | I pace                              | Peak phase, 1x/week       |
-| Repetitions      | 8-12 x 400m, 400m jog   | R pace                              | Speed, late build/peak    |
-| Progression      | Last 25% at faster pace | E → M → T                           | Race simulation           |
-| Fartlek          | Unstructured speed play | Varies                              | Mental break, adaptable   |
+### Running Recovery (RRe)
 
-### Sample Sessions
+| Code | Minutes or miles | Description       |
+| ---- | ---------------- | ----------------- |
+| RRe1 | 20               | 20 minutes Zone 1 |
+| RRe2 | 25               | 25 minutes Zone 1 |
+| RRe3 | 30               | 30 minutes Zone 1 |
+| RRe4 | 35               | 35 minutes Zone 1 |
+| RRe5 | 40               | 40 minutes Zone 1 |
+| RRe6 | 45               | 45 minutes Zone 1 |
+| RRe7 | 50               | 50 minutes Zone 1 |
+| RRe8 | 55               | 55 minutes Zone 1 |
+| RRe9 | 60               | 60 minutes Zone 1 |
 
-**Threshold Cruise Intervals:**
+### Running Foundation (RF)
 
-```
-Warm-up: 15min easy, 4x100m strides
-Main: 5 x 1600m @ T pace (LTHR 100%), 90s jog recovery
-Cool-down: 10min easy
-Total: 75min, moderate-high stress
-```
+| Code | Minutes or miles | Description                                               |
+| ---- | ---------------- | --------------------------------------------------------- |
+| RF1  | 20               | 5 minutes in Zone 1, 10 minutes Zone 2, 5 minutes Zone 1  |
+| RF2  | 25               | 5 minutes in Zone 1, 15 minutes Zone 2, 5 minutes Zone 1  |
+| RF3  | 30               | 5 minutes in Zone 1, 20 minutes Zone 2, 5 minutes Zone 1  |
+| RF4  | 35               | 5 minutes in Zone 1, 25 minutes Zone 2, 5 minutes Zone 1  |
+| RF5  | 40               | 5 minutes in Zone 1, 30 minutes Zone 2, 5 minutes Zone 1  |
+| RF6  | 45               | 5 minutes in Zone 1, 35 minutes Zone 2, 5 minutes Zone 1  |
+| RF7  | 50               | 5 minutes in Zone 1, 40 minutes Zone 2, 5 minutes Zone 1  |
+| RF8  | 55               | 5 minutes in Zone 1, 45 minutes Zone 2, 5 minutes Zone 1  |
+| RF9  | 60               | 5 minutes in Zone 1, 50 minutes Zone 2, 5 minutes Zone 1  |
+| RF10 | 70               | 5 minutes in Zone 1, 60 minutes Zone 2, 5 minutes Zone 1  |
+| RF11 | 80               | 5 minutes in Zone 1, 70 minutes Zone 2, 5 minutes Zone 1  |
+| RF12 | 90               | 5 minutes in Zone 1, 80 minutes Zone 2, 5 minutes Zone 1  |
+| RF13 | 70               | 5 minutes in Zone 1, 60 minutes Zone 2, 5 minutes Zone 1  |
+| RF14 | 100              | 5 minutes in Zone 1, 90 minutes Zone 2, 5 minutes Zone 1  |
+| RF15 | 110              | 5 minutes in Zone 1, 100 minutes Zone 2, 5 minutes Zone 1 |
+| RF16 | 105              | 5 minutes in Zone 1, 95 minutes Zone 2, 5 minutes Zone 1  |
+| RF17 | 120              | 5 minutes in Zone 1, 110 minutes Zone 2, 5 minutes Zone 1 |
 
-**VO2max Development:**
+### Running Aerobic Intervals (RAe)
 
-```
-Warm-up: 15min easy, 6x100m strides
-Main: 5 x 1000m @ I pace (LTHR 103-106%), 400m jog recovery
-Cool-down: 15min easy
-Total: 60min, high stress
-```
+| Code  | Minutes or miles | Description                                                                    |
+| ----- | ---------------- | ------------------------------------------------------------------------------ |
+| RAe1  | 60               | 10 minutes Zone 1, 3 x (10 minutes Zone 2/3 minutes Zone 1) 10 minutes Zone 1  |
+| RAe2  | 90               | 15 minutes Zone 1, 3 x (10 minutes Zone 2/3 minutes Zone 1) 35 minutes Zone 1  |
+| RAe3  | 75               | 12 minutes Zone 1, 4 x (10 minutes Zone 2/3 minutes Zone 1) 12 minutes Zone 1  |
+| RAe4  | 90               | 15 minutes Zone 1, 3 x (15 minutes Zone 2/5 minutes Zone 1) 15 minutes Zone 1  |
+| RAe5  | 90               | 10 minutes Zone 1, 4 x (15 minutes Zone 2/5 minutes Zone 1)                    |
+| RAe6  | 105              | 10 minutes Zone 1, 4 x (15 minutes Zone 2/5 minutes Zone 1) 15 minutes Zone 1  |
+| RAe7  | 120              | 10 minutes Zone 1, 4 x (15 minutes Zone 2/5 minutes Zone 1) 30 minutes Zone 1  |
+| RAe8  | 135              | 10 minutes Zone 1, 4 x (15 minutes Zone 2/5 minutes Zone 1) 45 minutes Zone 1  |
+| RAe9  | 150              | 10 minutes Zone 1, 4 x (15 minutes Zone 2/5 minutes Zone 1) 60 minutes Zone 1  |
+| RAe10 | 105              | 10 minutes Zone 1, 3 x (15 minutes Zone 2/5 minutes Zone 1) 35 minutes Zone 1  |
+| RAe11 | 120              | 10 minutes Zone 1, 3 x (15 minutes Zone 2/5 minutes Zone 1) 50 minutes Zone 1  |
+| RAe12 | 135              | 10 minutes Zone 1, 3 x (15 minutes Zone 2/5 minutes Zone 1) 65 minutes Zone 1  |
+| RAe13 | 150              | 10 minutes Zone 1, 3 x (15 minutes Zone 2/5 minutes Zone 1) 80 minutes Zone 1  |
+| RAe14 | 120              | 10 minutes Zone 1, 3 x (4 minutes Zone 2/1 minutes Zone 1) 95 minutes Zone 2   |
+| RAe15 | 130              | 10 minutes Zone 1, 3 x (5 minutes Zone 2/1 minutes Zone 1) 102 minutes Zone 2  |
+| RAe16 | 140              | 10 minutes Zone 1, 3 x (6 minutes Zone 2/1 minutes Zone 1) 109 minutes Zone 2  |
+| RAe17 | 150              | 10 minutes Zone 1, 3 x (7 minutes Zone 2/1 minutes Zone 1) 116 minutes Zone 2  |
+| RAe18 | 160              | 10 minutes Zone 1, 3 x (8 minutes Zone 2/1 minutes Zone 1) 123 minutes Zone 2  |
+| RAe19 | 170              | 10 minutes Zone 1, 3 x (9 minutes Zone 2/1 minutes Zone 1) 130 minutes Zone 2  |
+| RAe20 | 180              | 10 minutes Zone 1, 3 x (10 minutes Zone 2/1 minutes Zone 1) 137 minutes Zone 2 |
+| RAe21 | 165              | 10 minutes Zone 1, 4 x (15 minutes Zone 2/1 minutes Zone 1) 90 minutes Zone 2  |
+| RAe22 | 46               | 10 minutes Zone 1, 3 x (10 minutes Zone 2/2 minutes Zone 1)                    |
 
-**Marathon-Specific Long Run:**
+### Running Long (RL)
 
-```
-Warm-up: 2km very easy
-Main: 24km total
-      - First 16km @ E pace (Zone 2)
-      - Final 8km @ M pace (Zone 3)
-Cool-down: 1km walk/easy jog
-Nutrition: Practice race-day fueling every 30-45min
-```
+| Code | Minutes or miles | Description                                       |
+| ---- | ---------------- | ------------------------------------------------- |
+| RL1  | 6 mi             | 1 mile Zone 1, 4.5 miles Zone 2, 0.5 mile Zone 1  |
+| RL2  | 7 mi             | 1 mile Zone 1, 5.5 miles Zone 2, 0.5 mile Zone 1  |
+| RL3  | 8 mi             | 1 mile Zone 1, 6.5 miles Zone 2, 0.5 mile Zone 1  |
+| RL4  | 9 mi             | 1 mile Zone 1, 7.5 miles Zone 2, 0.5 mile Zone 1  |
+| RL5  | 10 mi            | 1 mile Zone 1, 8.5 miles Zone 2, 0.5 mile Zone 1  |
+| RL6  | 11 mi            | 1 mile Zone 1, 9.5 miles Zone 2, 0.5 mile Zone 1  |
+| RL7  | 12 mi            | 1 mile Zone 1, 10.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL8  | 13 mi            | 1 mile Zone 1, 11.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL9  | 14 mi            | 1 mile Zone 1, 12.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL10 | 15 mi            | 1 mile Zone 1, 13.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL11 | 16 mi            | 1 mile Zone 1, 14.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL12 | 17 mi            | 1 mile Zone 1, 15.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL13 | 18 mi            | 1 mile Zone 1, 16.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL14 | 19 mi            | 1 mile Zone 1, 17.5 miles Zone 2, 0.5 mile Zone 1 |
+| RL15 | 20 mi            | 1 mile Zone 1, 18.5 miles Zone 2, 0.5 mile Zone 1 |
 
-**Progression Run (Advanced):**
+### Running Cruise Intervals (RCI)
 
-```
-16km total:
-- 0-6km: Easy (Zone 2)
-- 6-10km: Steady (Zone 2-3)
-- 10-14km: Tempo (Zone 4)
-- 14-16km: Threshold (Zone 5a)
-Great for teaching pace discipline and finishing strong
-```
+| Code  | Minutes or miles | Description                                                                                                        |
+| ----- | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| RCI1  | 60               | 5 minutes Zone 1, 21 minutes Zone 2, 3 x (5 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1    |
+| RCI2  | 52               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (5 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| RCI3  | 64               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (8 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| RCI4  | 72               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (10 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1    |
+| RCI5  | 80               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (12 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1    |
+| RCI6  | 92               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (15 minutes Zone 3/3 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1    |
+| RCI7  | 70               | 15 minutes Zone 1, 11 minutes Zone 2, 2 x (10 minutes Zone 3/4 minutes Zone 1) 11 minutes Zone 2, 5 minutes Zone 1 |
+| RCI8  | 70               | 5 minutes Zone 1, 10 minutes Zone 2, 4 x (6 minutes Zone 3/3 minutes Zone 1) 14 minutes Zone 2, 5 minutes Zone 1   |
+| RCI9  | 74               | 5 minutes Zone 1, 10 minutes Zone 2, 4 x (7 minutes Zone 3/3 minutes Zone 1) 14 minutes Zone 2, 5 minutes Zone 1   |
+| RCI10 | 45               | 5 minutes Zone 1, 6 minutes Zone 2, 3 x (6 minutes Zone 3/2 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| RCI11 | 53               | 5 minutes Zone 1, 6 minutes Zone 2, 4 x (6 minutes Zone 3/2 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1     |
+| RCI12 | 61               | 5 minutes Zone 1, 10 minutes Zone 2, 4 x (7 minutes Zone 3/2 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1    |
+| RCI13 | 30               | 10 minutes Zone 1, 3 x (3 minutes Zone 3/2 minutes Zone 1) 5 minutes Zone 1                                        |
+| RCI14 | 71               | 5 minutes Zone 1, 10 minutes Zone 2, 4 x (10 minutes Zone 3/4 minutes Zone 1)                                      |
+| RCI15 | 38               | 15 minutes Zone 1, 3 x (4 minutes Zone 3/2 minutes Zone 1) 5 minutes Zone 1                                        |
 
-### Long Run Targets by Event
+### Running Tempo (RT)
 
-| Event         | Peak Long Run    | Frequency       | Notes                            |
-| ------------- | ---------------- | --------------- | -------------------------------- |
-| 5K            | 10-12km          | Weekly          | Some quality in long runs OK     |
-| 10K           | 14-16km          | Weekly          | Include some tempo               |
-| Half Marathon | 18-22km          | Weekly          | 1-2 runs at goal pace            |
-| Marathon      | 32-35km          | Every 2-3 weeks | Don't exceed 3.5hr               |
-| Ultra (50K)   | 35-45km or 4-5hr | Every 2-3 weeks | Time-based, practice nutrition   |
-| Ultra (100K+) | 50-60km or 5-6hr | Monthly         | Back-to-back long runs work well |
+| Code | Minutes or miles | Description                                                                                   |
+| ---- | ---------------- | --------------------------------------------------------------------------------------------- |
+| RT1  | 35               | 5 minutes Zone 1, 5 minutes Zone 2, 15 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT2  | 38               | 5 minutes Zone 1, 5 minutes Zone 2, 18 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT3  | 40               | 5 minutes Zone 1, 5 minutes Zone 2, 20 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT4  | 44               | 5 minutes Zone 1, 5 minutes Zone 2, 24 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT5  | 48               | 5 minutes Zone 1, 5 minutes Zone 2, 28 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT6  | 50               | 5 minutes Zone 1, 5 minutes Zone 2, 30 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT7  | 52               | 5 minutes Zone 1, 5 minutes Zone 2, 32 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT8  | 56               | 5 minutes Zone 1, 5 minutes Zone 2, 36 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT9  | 60               | 5 minutes Zone 1, 5 minutes Zone 2, 40 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT10 | 65               | 5 minutes Zone 1, 5 minutes Zone 2, 45 minutes Zone 3, 5 minutes Zone 2, 5 minutes Zone 1     |
+| RT11 | 50               | 5 minutes Zone 1, 15 minutes Zone 2, 10 minutes Zone 3, 15 minutes Zone 2, 5 minutes Zone 1   |
+| RT12 | 55               | 5 minutes Zone 1, 15 minutes Zone 2, 10 minutes Zone 3, 20 minutes Zone 2, 5 minutes Zone 1   |
+| RT13 | 50               | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 10 minutes Zone 2, 5 minutes Zone 1   |
+| RT14 | 54               | 5 minutes Zone 1, 10 minutes Zone 2, 24 minutes Zone 3, 10 minutes Zone 2, 5 minutes Zone 1   |
+| RT15 | 62               | 5 minutes Zone 1, 10 minutes Zone 2, 32 minutes Zone 3, 10 minutes Zone 2, 5 minutes Zone 1   |
+| RT16 | 60               | 10 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 10 minutes Zone 2, 10 minutes Zone 1 |
+| RT17 | 76               | 10 minutes Zone 1, 10 minutes Zone 2, 36 minutes Zone 3, 10 minutes Zone 2, 10 minutes Zone 1 |
+| RT18 | 70               | 5 minutes Zone 1, 10 minutes Zone 2, 40 minutes Zone 3, 10 minutes Zone 2, 5 minutes Zone 1   |
+| RT19 | 90               | 5 minutes Zone 1, 10 minutes Zone 2, 20 minutes Zone 3, 50 minutes Zone 2, 5 minutes Zone 1   |
+| RT20 | 90               | 5 minutes Zone 1, 10 minutes Zone 2, 25 minutes Zone 3, 50 Minutes Zone 1                     |
+
+### Running Fast Finish (RFF)
+
+| Code  | Minutes or miles | Description                                            |
+| ----- | ---------------- | ------------------------------------------------------ |
+| RFF1  | 25               | 5 minutes Zone 1, 15 minutes Zone 2, 5 minutes Zone 3  |
+| RFF2  | 30               | 5 minutes Zone 1, 20 minutes Zone 2, 5 minutes Zone 3  |
+| RFF3  | 30               | 5 minutes Zone 1, 15 minutes Zone 2, 10 minutes Zone 3 |
+| RFF4  | 40               | 5 minutes Zone 1, 25 minutes Zone 2, 10 minutes Zone 3 |
+| RFF5  | 42               | 5 minutes Zone 1, 25 minutes Zone 2, 12 minutes Zone 3 |
+| RFF6  | 47               | 5 minutes Zone 1, 30 minutes Zone 2, 12 minutes Zone 3 |
+| RFF7  | 52               | 5 minutes Zone 1, 35 minutes Zone 2, 12 minutes Zone 3 |
+| RFF8  | 55               | 5 minutes Zone 1, 35 minutes Zone 2, 15 minutes Zone 3 |
+| RFF9  | 60               | 5 minutes Zone 1, 40 minutes Zone 2, 15 minutes Zone 3 |
+| RFF10 | 65               | 5 minutes Zone 1, 45 minutes Zone 2, 15 minutes Zone 3 |
+| RFF11 | 60               | 5 minutes Zone 1, 45 minutes Zone 2, 10 minutes Zone 3 |
+
+### Running Long Fast Finish (RLFF)
+
+| Code  | Minutes or miles | Description                                        |
+| ----- | ---------------- | -------------------------------------------------- |
+| RLFF1 | 10 mi            | 0.5 mile Zone 1, 8.5 miles Zone 2, 1 mile Zone 3   |
+| RLFF2 | 12 mi            | 0.5 mile Zone 1, 10.5 miles Zone 2, 1 mile Zone 3  |
+| RLFF3 | 14 mi            | 0.5 mile Zone 1, 12 miles Zone 2, 1.5 miles Zone 3 |
+| RLFF4 | 16 mi            | 0.5 mile Zone 1, 14 miles Zone 2, 1.5 miles Zone 3 |
+| RLFF5 | 18 mi            | 0.5 mile Zone 1, 15.5 miles Zone 2, 2 miles Zone 3 |
+| RLFF6 | 20 mi            | 0.5 mile Zone 1, 17.5 miles Zone 2, 2 miles Zone 3 |
+
+### Running Hill Repeats (RHR)
+
+| Code  | Minutes or miles | Description                                                                                              |
+| ----- | ---------------- | -------------------------------------------------------------------------------------------------------- |
+| RHR1  | 45               | 5 minutes Zone 1, 32 minutes Zone 2, 4 x (30 seconds Zone 5 uphill/90 seconds Zone 1)                    |
+| RHR2  | 27               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (30 seconds Zone 5 uphill/90 seconds Zone 1) 5 minutes Zone 1    |
+| RHR3  | 31               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (30 seconds Zone 5 uphill/90 seconds Zone 1) 5 minutes Zone 1    |
+| RHR4  | 33               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1 minute Zone 5 uphill/2 minutes Zone 1) 5 minutes Zone 1       |
+| RHR5  | 35               | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (30 seconds Zone 5 uphill/90 seconds Zone 1) 5 minutes Zone 1   |
+| RHR6  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (30 seconds Zone 5 uphill/90 seconds Zone 1) 5 minutes Zone 1   |
+| RHR7  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1 minute Zone 5 uphill/2 minutes Zone 1) 5 minutes Zone 1       |
+| RHR8  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1.5 minutes Zone 5 uphill/2.5 minutes Zone 1) 5 minutes Zone 1  |
+| RHR9  | 45               | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1 minute Zone 5 uphill/2 minutes Zone 1) 5 minutes Zone 1      |
+| RHR10 | 47               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1.5 minutes Zone 5 uphill/2.5 minutes Zone 1) 5 minutes Zone 1  |
+| RHR11 | 51               | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1 minute Zone 5 uphill/2 minutes Zone 1) 5 minutes Zone 1      |
+| RHR12 | 55               | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1.5 minutes Zone 5 uphill/2.5 minutes Zone 1) 5 minutes Zone 1 |
+| RHR13 | 63               | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1.5 minutes Zone 5 uphill/2.5 minutes Zone 1) 5 minutes Zone 1 |
+| RHR14 | 50               | 5 minutes Zone 1, 20 minutes Zone 2, 10 x (30 seconds Zone 5 uphill/90 seconds Zone 1) 5 minutes Zone 1  |
+
+### Running Mixed Intervals (RMI)
+
+| Code | Minutes or miles | Description                                                                                                                                                                                                                                                           |
+| ---- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| RMI1 | 36               | 5 minutes Zone 1, 5 minutes Zone 2, 1 minute Zone 5, 2 minutes Zone 1, 3 minutes Zone 4, 2 minutes Zone 1, 5 minutes Zone 3, 2 minutes Zone 1, 3 minutes Zone 4, 2 minutes Zone 1, 1 minute Zone 5, 5 minutes Zone 1                                                  |
+| RMI2 | 46               | 5 minutes Zone 1, 5 minutes Zone 2, 1.5 minute Zone 5, 2 minutes Zone 1, 5 minutes Zone 4, 2 minutes Zone 1, 10 minutes Zone 3, 2 minutes Zone 1, 5 minutes Zone 4, 2 minutes Zone 1, 1.5 minute Zone 5, 5 minutes Zone 1                                             |
+| RMI3 | 59               | 5 minutes Zone 1, 5 minutes Zone 2, 2 x (1 minute Zone 5/2 minutes Zone 1), 2 x (3 minutes Zone 4/2 minutes Zone 1), 10 minutes Zone 3, 2 minutes Zone 1, 2 x (3 minutes Zone 4/2 minutes Zone 1), 2 x (1 minute Zone 5/2 minutes Zone 1), 5 minutes Zone 1           |
+| RMI4 | 71               | 5 minutes Zone 1, 5 minutes Zone 2, 2 x (1.5 minutes Zone 5/2.5 minutes Zone 1), 2 x (5 minutes Zone 4/2 minutes Zone 1), 10 minutes Zone 3, 2 minutes Zone 1, 2 x (1.5 minutes Zone 5/2.5 minutes Zone 1), 2 x (5 minutes Zone 4/2 minutes Zone 1), 5 minutes Zone 1 |
+
+### Running Anaerobic Intervals (RAn)
+
+| Code | Minutes or miles | Description                                                                     |
+| ---- | ---------------- | ------------------------------------------------------------------------------- |
+| RAn1 | 60               | 15 minutes Zone 1, 4 x (2.5 minutes Zone 4/5 minutes Zone 1) 15 minutes Zone 1  |
+| RAn2 | 60               | 15 minutes Zone 1, 5 x (2.5 minutes Zone 4/5 minutes Zone 1) 7.5 minutes Zone 1 |
+| RAn3 | 60               | 15 minutes Zone 1, 6 x (2.5 minutes Zone 4/5 minutes Zone 1)                    |
+| RAn4 | 45               | 15 minutes Zone 1, 4 x (2.5 minutes Zone 4/5 minutes Zone 1)                    |
+| RAn5 | 45               | 15 minutes Zone 1, 3 x (2.5 minutes Zone 4/5 minutes Zone 1) 7 minutes Zone 1   |
+
+### Running Short Intervals (RSI)
+
+| Code  | Minutes or miles | Description                                                                                       |
+| ----- | ---------------- | ------------------------------------------------------------------------------------------------- |
+| RSI1  | 33               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1 minute Zone 5/2 minutes Zone 1) 5 minutes Zone 1       |
+| RSI2  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1 minute Zone 5/2 minutes Zone 1) 5 minutes Zone 1       |
+| RSI3  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1.5 minutes Zone 5/2.5 minutes Zone 1) 5 minutes Zone 1  |
+| RSI4  | 45               | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1 minute Zone 5/2 minutes Zone 1) 5 minutes Zone 1      |
+| RSI5  | 47               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1.5 minutes Zone 5/2.5 minutes Zone 1) 5 minutes Zone 1  |
+| RSI6  | 51               | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1 minute Zone 5/2 minutes Zone 1) 5 minutes Zone 1      |
+| RSI7  | 55               | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1.5 minutes Zone 5/2.5 minutes Zone 1) 5 minutes Zone 1 |
+| RSI8  | 63               | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1.5 minutes Zone 5/2.5 minutes Zone 1) 5 minutes Zone 1 |
+| RSI9  | 60               | 5 minutes Zone 1, 26 minutes Zone 2, 8 x (1 minutes Zone 5/2 minutes Zone 1) 5 minutes Zone 1     |
+| RSI10 | 44               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1 minutes Zone 5/2 minutes Zone 1) 10 minutes Zone 1     |
+| RSI11 | 60               | 5 minutes Zone 1, 15 minutes Zone 2, 10 x (1 minutes Zone 5/2 minutes Zone 1) 10 minutes Zone 1   |
+
+### Running Long Intervals (RLI)
+
+| Code  | Minutes or miles | Description                                                                                                    |
+| ----- | ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| RLI1  | 30               | 5 minutes Zone 1, 5 minutes Zone 2, 3 x (3 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI2  | 35               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (3 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI3  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 3 x (5 minutes Zone 4/3 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI4  | 40               | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (3 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI5  | 45               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (3 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI6  | 47               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (5 minutes Zone 4/3 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI7  | 55               | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (5 minutes Zone 4/3 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI8  | 63               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (5 minutes Zone 4/3 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI9  | 71               | 5 minutes Zone 1, 5 minutes Zone 2, 7 x (5 minutes Zone 4/3 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI10 | 79               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (5 minutes Zone 4/3 minutes Zone 1) 5 minutes Zone 1                   |
+| RLI11 | 50               | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (4 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1 |
+| RLI12 | 44               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (4 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1 |
+
+### Running Speed Play (RSP)
+
+| Code  | Minutes or miles | Description                                                                                                     |
+| ----- | ---------------- | --------------------------------------------------------------------------------------------------------------- |
+| RSP1  | 45               | 5 minutes Zone 1, 28 minutes Zone 2, 4 x (1 minute Zone 4/2 minutes Zone 1)                                     |
+| RSP2  | 30               | 5 minutes Zone 1, 5 minutes Zone 2, 3 x (2 minutes Zone 4/2 minutes Zone 1) 8 minutes Zone 1                    |
+| RSP3  | 30               | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                     |
+| RSP4  | 31               | 5 minutes Zone 1, 5 minutes Zone 2, 4 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP5  | 33               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                     |
+| RSP6  | 35               | 5 minutes Zone 1, 5 minutes Zone 2, 5 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP7  | 36               | 5 minutes Zone 1, 5 minutes Zone 2, 7 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                     |
+| RSP8  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 6 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP9  | 39               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                     |
+| RSP10 | 42               | 5 minutes Zone 1, 5 minutes Zone 2, 9 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                     |
+| RSP11 | 43               | 5 minutes Zone 1, 5 minutes Zone 2, 7 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP12 | 45               | 5 minutes Zone 1, 5 minutes Zone 2, 10 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP13 | 47               | 5 minutes Zone 1, 5 minutes Zone 2, 8 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP14 | 51               | 5 minutes Zone 1, 5 minutes Zone 2, 9 x (2 minutes Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP15 | 51               | 5 minutes Zone 1, 5 minutes Zone 2, 12 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP16 | 51               | 5 minutes Zone 1, 20 minutes Zone 2, 7 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP17 | 60               | 5 minutes Zone 1, 20 minutes Zone 2, 10 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                   |
+| RSP18 | 48               | 5 minutes Zone 1, 5 minutes Zone 2, 7 x (2 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 2, 5 minutes Zone 1   |
+| RSP19 | 50               | 5 minutes Zone 1, 15 minutes Zone 2, 8 x (1 minute Zone 4/2 minutes Zone 1) 5 minutes Zone 1                    |
+| RSP20 | 55               | 5 minutes Zone 1, 15 minutes Zone 2, 5 x (2 minute Zone 4/2 minutes Zone 1) 10 minutes Zone 2, 5 minutes Zone 1 |
+| RSP21 | 50               | 5 minutes Zone 1, 10 minutes Zone 2, 5 x (2 minute Zone 4/2 minutes Zone 1) 10 minutes Zone 2, 5 minutes Zone 1 |
+
+### Running Long Speed Play (RLSP)
+
+| Code  | Minutes or miles | Description                                                                              |
+| ----- | ---------------- | ---------------------------------------------------------------------------------------- |
+| RLSP1 | 10 mi            | 0.5 mile Zone 1, 1 mile Zone 2, 8 x (0.25 mile Zone 3/0.75 mile Zone 2) 0.5 mile Zone 1  |
+| RLSP2 | 12mi             | 0.5 mile Zone 1, 1 mile Zone 2, 10 x (0.25 mile Zone 3/0.75 mile Zone 2) 0.5 mile Zone 1 |
+| RLSP3 | 14 mi            | 0.5 mile Zone 1, 1 mile Zone 2, 12 x (0.25 mile Zone 3/0.75 mile Zone 2) 0.5 mile Zone 1 |
+| RLSP4 | 16 mi            | 0.5 mile Zone 1, 1 mile Zone 2, 14 x (0.25 mile Zone 3/0.75 mile Zone 2) 0.5 mile Zone 1 |
+| RLSP5 | 18 mi            | 0.5 mile Zone 1, 1 mile Zone 2, 16 x (0.25 mile Zone 3/0.75 mile Zone 2) 0.5 mile Zone 1 |
+| RLSP6 | 20 mi            | 0.5 mile Zone 1, 1 mile Zone 2, 18 x (0.25 mile Zone 3/0.75 mile Zone 2) 0.5 mile Zone 1 |
+
+### Running Long Marathon Simulator (RLMS)
+
+| Code | Minutes or miles | Description                                                              |
+| ---- | ---------------- | ------------------------------------------------------------------------ |
+| RLMS | 20 mi            | 1.5 miles Zone 1, 16 miles at race pace, 1 mile Zone 2, 1.5 miles Zone 1 |
+
+### Running Taper (RTa)
+
+| Code | Minutes or miles | Description                                 |
+| ---- | ---------------- | ------------------------------------------- |
+| RTa1 | 10               | 5 minutes Zone 1, 6 x (20" Zone 4/40" rest) |
 
 ---
 
-## Strength Training
+## Using the Library
 
-Strength work is essential for injury prevention, power development, and late-race durability. Include 1-2 sessions per week.
+### Picking a workout by purpose
 
-### Workout Types
+| Purpose                       | Workout types                                                             |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| Recovery after hard days      | Recovery (SRe, CRe, RRe)                                                  |
+| Aerobic base                  | Foundation, Aerobic Intervals, Long (SF, CF, CAe, RF, RAe, RL)            |
+| Muscular endurance            | Tempo, Cruise Intervals, Fast Finish                                      |
+| Race-pace / race-specific     | Mixed Intervals, Long Fast Finish, Long Marathon Simulator                |
+| Speed and VO2max              | Short Intervals, Long Intervals, Anaerobic Intervals, Hill Repeats, Force |
+| Playful or flexible intensity | Speed Play (SSP, CSP, RSP, RLSP)                                          |
+| Testing and sharpening        | Time Trial (STT), Taper (STa, RTa)                                        |
 
-| Session Type | Structure                          | When to Use            |
-| ------------ | ---------------------------------- | ---------------------- |
-| Foundation   | 2-3 sets x 12-15 reps, bodyweight  | Base phase, beginners  |
-| Strength     | 3-4 sets x 6-8 reps, moderate load | Build phase, 1-2x/week |
-| Power        | 3-4 sets x 4-6 reps, explosive     | Peak phase, 1x/week    |
-| Maintenance  | 2 sets x 8-10 reps, light          | Race week, taper       |
+### Rules of thumb
 
-### Core Exercises (Every Session)
-
-```
-Plank: 3 x 45-60s
-Side plank: 2 x 30s each side
-Dead bug: 2 x 12 each side
-Bird dog: 2 x 10 each side
-```
-
-### Triathlete-Specific Exercises
-
-| Focus        | Exercises                                    | Why                               |
-| ------------ | -------------------------------------------- | --------------------------------- |
-| Swim power   | Lat pulldown, pull-ups, band pull-aparts     | Catch strength, stroke power      |
-| Bike power   | Squats, leg press, step-ups, single-leg work | Pedaling force, hill climbing     |
-| Run strength | Lunges, Romanian deadlifts, calf raises      | Push-off power, injury prevention |
-| Stability    | Single-leg squats, BOSU work, hip circles    | Balance, proprioception           |
-
-### Sample Session (45min)
-
-```
-Warm-up: 5min light cardio, dynamic stretches
-Circuit 1 (3 rounds):
-  - Goblet squats x 10
-  - Push-ups x 12
-  - Single-leg Romanian deadlift x 8 each
-Circuit 2 (3 rounds):
-  - Lat pulldown x 10
-  - Step-ups x 10 each leg
-  - Plank x 45s
-Cool-down: 5min stretching
-```
-
-### Timing Considerations
-
-- **Before endurance**: Light activation only (bands, bodyweight)
-- **After easy sessions**: Full strength OK
-- **Separate from key workouts**: 6+ hours apart, or different days
-- **Taper**: Reduce to maintenance (2 sets, lighter weight)
-
----
-
-## Multiple Workouts Per Day (Doubles)
-
-Doubling up sessions is common in triathlon. Guidelines:
-
-### When to Use Doubles
-
-| Scenario                | Example                    | Notes                        |
-| ----------------------- | -------------------------- | ---------------------------- |
-| Brick workouts          | Bike → Run                 | Race simulation, transition  |
-| Time-efficient training | AM swim + PM run           | Separate by 6+ hours ideally |
-| High-volume phases      | Easy swim AM + bike PM     | Keep one session easy        |
-| Strength + cardio       | AM strength + PM easy ride | Strength first when fresh    |
-
-### Rules for Doubles
-
-1. **Never two quality sessions on the same day** - One hard, one easy
-2. **Separate key sessions** - 6+ hours between, or easy/hard split
-3. **Fuel between sessions** - Carbs and protein within 30min of first session
-4. **Sleep matters more** - Skip the double if sleep-deprived
-5. **Consider weekly load** - Doubles add stress; reduce elsewhere if needed
-
-### Sample Double Days
-
-**Triathlon Build Phase:**
-
-```
-AM: 45min technique swim (easy)
-PM: 90min bike with sweet spot intervals (quality)
-```
-
-**Weekend Long Day:**
-
-```
-AM: 3hr long ride (quality)
-PM: 30min easy transition run (easy)
-```
-
-**Time-Crunched Weekday:**
-
-```
-Lunch: 30min strength (moderate)
-PM: 60min easy run (easy)
-```
-
----
-
-## Session Intensity Distribution (Polarized Model)
-
-For endurance events, 80% of volume should be easy (Zone 1-2), 20% hard (Zone 4+). Avoid excessive Zone 3 "gray zone" training.
-
-| Zone         | % of Weekly Volume | Purpose                       |
-| ------------ | ------------------ | ----------------------------- |
-| 1-2 (Easy)   | 75-80%             | Aerobic development, recovery |
-| 3 (Moderate) | 5-10%              | Race-specific only            |
-| 4-5 (Hard)   | 15-20%             | Stimulus for adaptation       |
+1. Keep about 80% of weekly volume in Zones 1-2 and about 20% in Zones 3-5.
+2. Do not stack two moderate or high-intensity sessions on the same day. Pair a hard session with an easy one.
+3. Use Recovery workouts after hard days, not as filler on top of other hard work.
+4. Put Foundation and Long workouts in the base phase. Add Tempo, Cruise, and Fast Finish workouts in build. Save Short Intervals, Anaerobic Intervals, and Force or Hill Repeats for peak.
+5. Use Taper workouts in the final week before a race.
+6. Brick and strength sessions are not in this library. Schedule them separately.
